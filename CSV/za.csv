@@ -1,0 +1,158 @@
+boss,loot_name,loot_url,type,bis,spec1,spec2,priority,notes
+Akil'zon (Eagle Avatar),Lame-ergot d'Akil'zon,https://www.wowhead.com/tbc/fr/item=33214,Arme 1M - Épée,BP4,Physical DPS,Tank,Sword Rog > Rog > Hunt > Fury,Rog BP4 (Sword MH)
+Akil'zon (Eagle Avatar),Punisseur amani,https://www.wowhead.com/tbc/fr/item=33283,Arme 1M - Masse,BP4,Caster DPS/ PPal,Caster DPS/ Heal,"PPal > 
+Boom/Ele/Shadow > Ret",PPal BP4 (P3 Prio) Ret BP4 (1H Low Prio)
+Akil'zon (Eagle Avatar),Broigne de bataille elfique taché de sang,https://www.wowhead.com/tbc/fr/item=33215,Torse - Plaques,,Melee,Tank,Fury/Arms > Ret > PWar,"Fury/Arms BP4 (P3 Prio) 
+- May adjust later due to Armor Pen"
+Akil'zon (Eagle Avatar),Broche de miséricorde de la Nature,https://www.wowhead.com/tbc/fr/item=33281,Cou - Collier,BP4,Caster DPS/ Heal,Caster DPS/ Heal,RSha/Shadow > RDru > Boom/Lock,"Shadow BP4, RSha BP4, RDru BP4 (Low Prio)"
+Akil'zon (Eagle Avatar),Corselet de dessein caché,https://www.wowhead.com/tbc/fr/item=33216,Torse - Plaques,,Holy Paladin,Paladin,Holy Paladin,Comparable to T4 for Holy Paladin
+Akil'zon (Eagle Avatar),Masque de soigne-mojo,https://www.wowhead.com/tbc/fr/item=33286,Tête - Mailles,,Heal,Caster DPS,Holy Paladin/Resto Shaman,
+Akil'zon (Eagle Avatar),Chevalière des magies antiques,https://www.wowhead.com/tbc/fr/item=33293,Doigt - Anneau,BP5,Caster DPS/ Heal,Caster DPS/ Heal,"Mage > RDru/RSha > 
+HPal > Lock > Shadow","RDru BP5, Mage BP5, RSha BP5, HPal BP4, Lock BP4"
+Akil'zon (Eagle Avatar),Formule : Enchantement d'arme (Exécutrice),https://www.wowhead.com/tbc/fr/item=33307,Recette - Enchantement,,Enchanting,N/A,,
+Nalorakk (Bear Avatar),Ceinture à poches d'Angelame,https://www.wowhead.com/tbc/fr/item=33211,Taille - Cuir,BP4,Physical DPS/ Bear,Physical DPS/ Tank,"Bear > Cat/Ret/Rog/
+Enh/Fury/Arms > Hunt","Bear BP4 (Threat), Cat BP4, Ret BP4, 
+Rog BP4, Enh BP4, Fury/Arms BP4
+(All Classes P2 or P3 Prio)"
+Nalorakk (Bear Avatar),Fureur,https://www.wowhead.com/tbc/fr/item=33640,Off - H Fist,BP4,Physical DPS,Tank,Enh/Fury > Rog > Hunt,"Enh BP4 (P3 Prio), 
+Fury BP4 (P3 Prio)"
+Nalorakk (Bear Avatar),Fureur de l'ursidé,https://www.wowhead.com/tbc/fr/item=33285,Poignets - Tissu,BP4,Caster DPS/ Heal,Caster DPS/ Heal,"Ele > RSha > Lock >
+Boom/Mage/Shadow","Ele BP4, Boom BP4 (P3 Prio), 
+Mage BP4 (P3 Prio), Shadow BP4 
+(P3 Prio), RSha BP4 (P3 Prio), 
+Lock BP4 (P3 Prio)"
+Nalorakk (Bear Avatar),Croquenots de la jungle,https://www.wowhead.com/tbc/fr/item=33191,Pieds - Plaques,BP4,Tank,Melee,Prot Paladin/Prot Warrior,"PPal BP4 (P3 Prio), 
+PWar BP4 (P3 Prio)"
+Nalorakk (Bear Avatar),Masque d'introspection,https://www.wowhead.com/tbc/fr/item=33327,Tête - Plaques,,Holy Paladin,Paladin,Holy Paladin,Comparable to T4 for Holy Paladin
+Nalorakk (Bear Avatar),Espauliers de fureur primitive,https://www.wowhead.com/tbc/fr/item=33206,Épaules - Mailles,BP4,Physical DPS,Tank,"Surv Hunt > Hunt > 
+Enh/Fury/Arms","Hunt BP4 (Surv Prio - Else P3 Prio)
+Bear Shoulders of Awesome"
+Nalorakk (Bear Avatar),Robe de dessein céleste,https://www.wowhead.com/tbc/fr/item=33203,Torse - Tissu,BP4,Heal,Caster DPS,RDru/HPri > RSha/HPal,"RDru BP4 (P3 Prio), 
+HPri BP4 (P3 Prio)"
+Nalorakk (Bear Avatar),Formule : Enchantement d'arme (Exécutrice),https://www.wowhead.com/tbc/fr/item=33307,Recette - Enchantement,,Enchanting,N/A,,
+Jan’alai (Avatar faucon-dragon),Corselet tombe-flèches,https://www.wowhead.com/tbc/fr/item=33328,Torse - Mailles,,Physical DPS,Tank,Enh > Hunt/Fury/Arms,
+Jan’alai (Avatar faucon-dragon),Rempart de l'empire amani,https://www.wowhead.com/tbc/fr/item=33326,Bouclier,BP4,Tank,Melee,Prot Paladin/Prot Warrior,"PPal BP4, PWar BP4 (Both P3 Prio)"
+Jan’alai (Avatar faucon-dragon),Disque de mojo en émail,https://www.wowhead.com/tbc/fr/item=33332,Bouclier,BP4,HPal/RSha,Paladin/Shaman,RSha > HPal,"HPal BP4 (P1 Prio), RSha BP4"
+Jan’alai (Avatar faucon-dragon),Souliers de la folie,https://www.wowhead.com/tbc/fr/item=33357,Pieds - Tissu,BP4,Caster DPS/ Heal,Caster DPS/ Heal,"Boom/Lock/Shadow > 
+Mage > HPri","Boom BP4 (P3 Prio), Lock BP4 
+(P3 Prio), Shadow BP4 (P3 Prio)"
+Jan’alai (Avatar faucon-dragon),Heaume de régénération naturelle,https://www.wowhead.com/tbc/fr/item=33356,Tête - Cuir,,RDru/Boom,Caster DPS/ Heal,RDru > Boom,Comparable to T4 for RDru/Boom
+Jan’alai (Avatar faucon-dragon),Thorax en peau de Troll crocs-d'ombre,https://www.wowhead.com/tbc/fr/item=33329,Torse - Cuir,BP4,Physical DPS/ Bear,Physical DPS/ Tank,"Bear > Cat/Ret/Rog/Enh/
+Fury/Arms","Bear BP4, Cat BP4, Ret BP4, 
+Rog BP4, Enh BP4, Enh BP4, 
+Fury/Arms BP4 (All Classes P3 Prio)
+- May adjust later due to Armor Pen"
+Jan’alai (Avatar faucon-dragon),Laméfice maudite de Wub,https://www.wowhead.com/tbc/fr/item=33354,Arme 1M - Dague,BP5,Caster DPS,Heal,Mage > Shadow > Boom/Ele/Shadow,"Mage BP5, Boom BP4 (P3 Prio), 
+Ele BP4, Shadow BP4, 
+Lock BP4 (P3 Prio)"
+Jan’alai (Avatar faucon-dragon),Formule : Enchantement d'arme (Exécutrice),https://www.wowhead.com/tbc/fr/item=33307,Recette - Enchantement,,Enchanting,N/A,,
+Halazzi (Lynx Avatar),Jambières d'avalanche,https://www.wowhead.com/tbc/fr/item=33533,Jambes - Mailles,BP4,HPal/Ele,Paladin/Shaman,Ele > HPal,Ele BP4
+Halazzi (Lynx Avatar),Robe des esprits défunts,https://www.wowhead.com/tbc/fr/item=33317,Torse - Tissu,BP4,Caster DPS/ Heal,Caster DPS/ Heal,Boom/Shadow > Heals > Caster DPS,"Boom BP4 (P3 Prio), 
+Shadow BP4 (P3 Prio)
+Good Haste for Healers in Wrath"
+Halazzi (Lynx Avatar),Gilet en peau chatoyante,https://www.wowhead.com/tbc/fr/item=33322,Torse - Cuir,,Heal,Caster DPS,RDru > RSha > HPal,
+Halazzi (Lynx Avatar),Protège-épaules des lames dansantes,https://www.wowhead.com/tbc/fr/item=33300,Épaules - Cuir,BP4,Physical DPS,Tank,Bear > Cat/Rog > Enh/Hunt/Fury/Arms/Ret,"Bear BP4, Cat BP4, Rog BP4
+(All P3 Prio)"
+Halazzi (Lynx Avatar),Bottes de guerre brisecrâne,https://www.wowhead.com/tbc/fr/item=33303,Pieds - Plaques,BP4,Ret/Warrior,Paladin/Warrior,Ret/Fury/Arms > PWar,"Ret BP4 (P3 Prio),
+Fury/Arms BP4 (P3 Prio)"
+Halazzi (Lynx Avatar),Spallières de l'intercesseur,https://www.wowhead.com/tbc/fr/item=33299,Épaules - Plaques,,Holy Paladin,Paladin,Holy Paladin,Comparable to T4 for Holy Paladin
+Halazzi (Lynx Avatar),Sautoir du sauvage,https://www.wowhead.com/tbc/fr/item=33297,Cou - Collier,BP4,Physical DPS/ Tank,Physical DPS/ Tank,Rog > Bear > DPS > PWar,"Bear BP4, (P3 Prio), 
+Rog BP4 (P3 Prio)"
+Halazzi (Lynx Avatar),Formule : Enchantement d'arme (Exécutrice),https://www.wowhead.com/tbc/fr/item=33307,Recette - Enchantement,,Enchanting,N/A,,
+Hex Lord Malacrass,Protège-défenses détérioré,https://www.wowhead.com/tbc/fr/item=33421,Tête - Plaques,BP4,PPal/PWar,Paladin/Warrior,Prot Paladin/Prot Warrior,"PPal BP4 (P2 Prio), 
+PWar BP4 (P3 Prio)"
+Hex Lord Malacrass,Cape des rituels antiques,https://www.wowhead.com/tbc/fr/item=33592,Dos,BP4,Priest,Caster DPS/ Heal,"HPri > Shadow > 
+Heals > Caster DPS",HPri BP4 (P3 Prio)
+Hex Lord Malacrass,Coiffe du traqueur de la jungle,https://www.wowhead.com/tbc/fr/item=33432,Tête - Mailles,BP4,Physical DPS,Tank,Hunt > Ret/Enh,"Hunt BP4 (P3 Prio)
+- May adjust later due to Armor Pen"
+Hex Lord Malacrass,Dague de mauvais mojo,https://www.wowhead.com/tbc/fr/item=33389,Arme 1M - Dague,BP4,Physical DPS,Tank,Dag Rog > Rog > Fury/Hunt,"Rog BP4 (MH), Hunt BP4
+- May adjust later due to Armor Pen"
+Hex Lord Malacrass,Ceinturon de l'espoir de Stromgarde,https://www.wowhead.com/tbc/fr/item=33446,Taille - Plaques,,Holy Paladin,Paladin,Holy Paladin,Comparable to T4 for Holy Paladin
+Hex Lord Malacrass,Sancœur,https://www.wowhead.com/tbc/fr/item=33388,Arme 1M - Épée,BP4,Physical DPS,Tank,"Sword Rog > Rog > 
+Hunt/Fury > Enh",Rog BP4 (MH Sword)
+Hex Lord Malacrass,Espauliers vaudou du seigneur des maléfices,https://www.wowhead.com/tbc/fr/item=33464,Épaules - Mailles,BP4,Heal,Caster DPS,Holy Paladin/Resto Shaman,"HPal BP4, RSha BP4 (Both P3 Prio)"
+Hex Lord Malacrass,Tête réduite à maléfices,https://www.wowhead.com/tbc/fr/item=33829,Bijou,BP5,Caster DPS/ Heal,Caster DPS/ Heal,"Boom/Ele/Shadow/Lock > 
+PPal > HPri > Mage","Boom BP5, Mage BP4 (P1-2 Prio), 
+PPal BP4 (Threat), HPri BP4, 
+Ele BP5, Shadow BP5, Lock BP5"
+Hex Lord Malacrass,Chaperon de maléfication,https://www.wowhead.com/tbc/fr/item=33453,Tête - Tissu,BP5,Caster DPS,Heal,"Lock > Boom/Ele/Shadow >
+Mage","Lock BP5, Boom BP4, Ele BP4, 
+Shadow BP4, Mage BP4 (P3 Prio)"
+Hex Lord Malacrass,Chaperon du troisième œil,https://www.wowhead.com/tbc/fr/item=33463,Tête - Tissu,BP5,Heal,Caster DPS/ Heal,"RDru/HPal/RSha > HPri > 
+Mage/Boom > Shadow/Lock","RDru BP5, HPal BP5, 
+RSha BP5, HPri BP4 (P3 Prio)"
+Hex Lord Malacrass,Frappelame du rôdeur,https://www.wowhead.com/tbc/fr/item=33298,Arme 1M - Dague,BP4,Physical DPS,Tank,Dag Rog > Rog > Fury/Hunt,Rog BP4 (Off-H Dagger)
+Hex Lord Malacrass,Bâton de fureur primitive,https://www.wowhead.com/tbc/fr/item=33465,Arme 2M - Bâton,BP5,Feral,Physical DPS,Cat > Bear,Cat BP5 (Close to P3 Prio)
+Hex Lord Malacrass,Masque vaudou minuscule,https://www.wowhead.com/tbc/fr/item=34029,Bijou,,ALL,N/A,,"Death by Gnomes! Shares cooldown 
+with Barov's, not with C'Thun. 
+Tentacles. Scales to 80 in Wrath"
+Hex Lord Malacrass,Tome de remède diabolique,https://www.wowhead.com/tbc/fr/item=33828,Bijou,BP5,Heal/Mage,Caster DPS/ Heal,"RDru/HPal/RSha > 
+HPri > Mage","RDru BP5, HPal BP5, 
+RSha BP5, HPri BP4"
+Hex Lord Malacrass,Formule : Enchantement d'arme (Exécutrice),https://www.wowhead.com/tbc/fr/item=33307,Recette - Enchantement,,Enchanting,N/A,,
+Zul'jin,Arc long amani ancien,https://www.wowhead.com/tbc/fr/item=33474,Arc,BP5,Physical DPS,Tank,Fury/Arms > Hunt > Rog,Fury/Arms BP5
+Zul'jin,Antique artéfact aqir,https://www.wowhead.com/tbc/fr/item=33830,Bijou,,Tank,Melee,Prot Paladin > PWar/Bear,
+Zul'jin,Appel du berserker,https://www.wowhead.com/tbc/fr/item=33831,Bijou,BP5,Physical DPS,Tank,"Cat/Hunt/Ret/Fury/Arms > 
+Rog/Enh > PWar","Cat BP5, Hunt BP5, Ret BP5, 
+Fury/Arms BP5, Rog BP4 (P1-3 Prio), 
+Enh BP4 (P1-3 Prio), 
+PWar BP4 (P1-3 Prio)"
+Zul'jin,Lame des visions tordues,https://www.wowhead.com/tbc/fr/item=33467,Arme 1M - Épée,,Caster DPS/ PPal,Caster DPS/ Heal,PPal > Mage/Lock > Ret,
+Zul'jin,Corselet du seigneur de guerre,https://www.wowhead.com/tbc/fr/item=33473,Torse - Plaques,BP4,PPal/PWar,Paladin/Warrior,Prot Paladin/Prot Warrior,"PPal BP4, PWar BP4 (Both P3 Prio)"
+Zul'jin,Fendoir du sans-pitié,https://www.wowhead.com/tbc/fr/item=33476,Arme 1M - Hache,BP4,Tank,Melee,Prot Warrior > Prot Paladin,PWar BP4 (P3 Prio)
+Zul'jin,Sombre bénédiction,https://www.wowhead.com/tbc/fr/item=33468,Arme 1M - Masse,BP4,Heal,Caster DPS,,"RDru BP4, HPal BP4, HPri BP4, 
+RSha BP4 (All Classes P3 Prio)"
+Zul'jin,Ventaille de Sombrictus,https://www.wowhead.com/tbc/fr/item=33479,Tête - Cuir,BP5,Physical DPS/ Bear,Physical DPS/ Tank,"Fury/Arms > Bear > 
+Cat/Ret/Rog/Enh > Hunt","Fury/Arms BP5, Bear BP4 (P3 Prio), 
+Cat BP4 (P3 Prio), Ret BP4 (P3 Prio), 
+Rog BP4 (P3 Prio) Enh BP4 (P3 Prio)"
+Zul'jin,Haubert du champion de l'empire,https://www.wowhead.com/tbc/fr/item=33469,Torse - Mailles,BP4,Heal,Caster DPS,HPal > RSha,"HPal BP4, RSha BP4 (P3 Prio)"
+Zul'jin,"Jin'rohk, la grande Apocalypse",https://www.wowhead.com/tbc/fr/item=33478,Arme 2M - Épée,BP4,Physical DPS,Tank,Ret > Arms > Hunt,"Ret BP4 (P3 Prio), Hunt BP4"
+Zul'jin,Jonc d'ossements maudits,https://www.wowhead.com/tbc/fr/item=33466,Cou - Collier,BP5,Caster DPS,Heal,"Arcane Mage > Mage/Ele > 
+Boom/Lock > Shadow","Mage BP4 (Arcane BP5), 
+Ele BP4, Boom BP4 (P3 Prio), 
+Lock BP4 (P3 Prio)"
+Zul'jin,Sandales à deux orteils,https://www.wowhead.com/tbc/fr/item=33471,Pieds - Tissu,BP5,Heal,Caster DPS,Healers > Mage > Boom,"RDru BP5, HPal BP5, HPri BP5, 
+RSha BP5, Mage BP4 (P3 Prio)"
+Zul'jin,Formule : Enchantement d'arme (Exécutrice),https://www.wowhead.com/tbc/fr/item=33307,Recette - Enchantement,,Enchanting,N/A,,
+Zul'jin,Sang de Zul'jin,https://www.wowhead.com/tbc/fr/item=33102,Quête,,ALL,N/A,,
+Zul'jin,Sac rapiécé en étoffe maléficiée,https://www.wowhead.com/tbc/fr/item=34067,Quête,,ALL,N/A,,20 Slot Bag
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,1ST BOSS KILL = ARMOR,,,,,,,
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Cape des fielleux,https://www.wowhead.com/tbc/fr/item=33590,Dos,BP5,Physical DPS/ Bear,Physical DPS/ Tank,"Rog/Enh > Bear > 
+Cat/Ret/Fury/Arms > Hunt","Rog BP5, Enh BP5, Bear BP4(P1 Prio), 
+Cat BP4 (P3 Prio), Ret BP4 (P3 Prio), 
+Fury/Arms BP4 (P3 Prio)"
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Corde de cheveux de Troll tressés,https://www.wowhead.com/tbc/fr/item=33480,Taille - Tissu,BP5,Caster DPS/ Heal,Caster DPS/ Heal,Healers > Boom/Mage,"RDru BP5, HPal BP5, HPri BP5, 
+RSha BP5, Boom BP4 (P3 Prio), 
+Mage BP4 (P2 Prio)"
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Jambières imprégnées d'élunite,https://www.wowhead.com/tbc/fr/item=33971,Jambes - Cuir,,Caster DPS,Heal,Boom > Ele,Comparable to Trial Fire from Kara
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Ceinture d'étape de vie,https://www.wowhead.com/tbc/fr/item=33483,Taille - Cuir,,Heal/Boom,Caster DPS/ Heal,RDru > HPal/Boom,RDru Opt BP5
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Mantelet de mauvaises intentions,https://www.wowhead.com/tbc/fr/item=33489,Épaules - Tissu,BP4,Caster DPS,Heal,"Boom/Mage/Shadow/Lock 
+> Ele","Boom BP4, Mage BP4, Shadow BP4, 
+Lock BP4 (All Classes P3 Prio)"
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Espauliers de résolution de pierre,https://www.wowhead.com/tbc/fr/item=33481,Épaules - Plaques,BP4,PPal/PWar,Paladin/Warrior,Prot Paladin/Prot Warrior,"PPal BP4, PWar BP4 (Both P3 Prio)"
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Drapé de l'Exhalombre,https://www.wowhead.com/tbc/fr/item=33591,Dos,BP4,Caster DPS,Heal,"Ele/Shadow > Boom > 
+Mage/Lock","Boom BP4 (P2 Prio), Ele BP4, 
+Shadow BP4"
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Bottines de chasseur des ombres,https://www.wowhead.com/tbc/fr/item=33805,Pieds - Mailles,BP4,Physical DPS,Tank,Hunt/Enh > Fury/Arms,"Hunt BP4, Enh BP4 (Both P3 Prio)"
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,2ND BOSS KILL = WEAPONS,,,,,,,
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Bâton de divination amani,https://www.wowhead.com/tbc/fr/item=33494,Arme 2M - Bâton,BP4,Caster DPS/ Resto Shaman,Caster DPS/ Heal,Boom > Mage > RSha > Shadow,"Boom BP4, Mage BP4 (P3 Prio)"
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Rage,https://www.wowhead.com/tbc/fr/item=33495,Arme 1M - Pugilat,BP4,Physical DPS,Tank,Rog > Fury > Hunt/Enh,"Rog BP4 (MH Fist), Fury BP4 (P3 Prio)"
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Bâton de sombre guérison,https://www.wowhead.com/tbc/fr/item=33490,Arme 2M - Bâton,BP4,Heal,Caster DPS,RDru > HPri > RSha > HPal,RDru BP4 (P3 Prio)
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Trollemort,https://www.wowhead.com/tbc/fr/item=33492,Arme 2M - Hache,,Physical DPS,Tank,Ret/Arms > Hunt,
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Brise-défenses,https://www.wowhead.com/tbc/fr/item=33491,Fusil,BP4,Physical DPS,Tank,Hunt > Fury/Arms > Rog,Hunt BP4
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Coutelas ombreux,https://www.wowhead.com/tbc/fr/item=33493,Arme 1M - Dague,,Physical DPS/ PWar,Physical DPS/ Tank,"PWar > Rog > Fury > 
+Hunt/Enh",
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,3RD BOSS KILL = RINGS,,,,,,,
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Bague harmonisée au mana,https://www.wowhead.com/tbc/fr/item=33497,Doigt - Anneau,BP5,Caster DPS,Heal,"Boom/Mage/Shadow > 
+Lock/Ele","Boom BP5, Mage BP5, Shadow BP5, Lock BP4, Ele BP4"
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Chevalière de vie éternelle,https://www.wowhead.com/tbc/fr/item=33500,Doigt - Anneau,BP4,Tank,ALL,Prot Warrior,PWar BP4 (P1-3 Prio)
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Chevalière du dernier défenseur,https://www.wowhead.com/tbc/fr/item=33499,Doigt - Anneau,BP4,Tank,Melee,Prot Paladin,PPal BP4 (P1-3 Prio)
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Chevalière de courroux primordial,https://www.wowhead.com/tbc/fr/item=33496,Doigt - Anneau,BP5,Physical DPS/ Bear,Physical DPS/ Tank,"Cat/Ret/Rog/Enh > Bear > 
+Hunt/Fury/Arms","Cat BP5, Ret BP5, Rog BP5, Enh BP5, 
+Bear BP4 (Threat), Hunt BP4 (P2-3 
+Prio), Fury/Arms BP4 (P1-3 Prio)"
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Chevalière de la forêt tranquille,https://www.wowhead.com/tbc/fr/item=33498,Doigt - Anneau,BP5,Heal,Caster DPS,RDru/HPri > RSha > HPal,"RDru BP5, HPri BP5, 
+HPal BP4 (P2 Prio), RSha BP4"
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,ALL BOSSES KILLED = 100% DROP CHANCE Monture,,,,,,,
+Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag,Ours de guerre amani,https://www.wowhead.com/tbc/fr/item=33809,Monture,,ALL,N/A,,
