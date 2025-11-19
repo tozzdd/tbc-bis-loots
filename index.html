@@ -13,7 +13,7 @@
           sans-serif;
         background: #111827;
         color: #e5e7eb;
-        padding: 1rem;
+        padding: 2rem;
         overflow-x: hidden;
       }
       h1 {
@@ -48,9 +48,9 @@
       }
       /* Wrapper pour faire le full-width une seule fois */
       .wide-row {
-        width: 100vw;
-        max-width: 100vw;
-        margin-left: calc(-50vw + 50%);
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
       }
 
       /* Barre de sélection */
@@ -136,9 +136,8 @@
       }
 
       .filters-bar.sticky-active {
-        background: #1a2333;
         box-shadow: 0 6px 14px rgba(0, 0, 0, 0.8);
-        border-bottom: 1px solid #4b5563;
+        border-bottom: 3px solid #4b5563;
       }
       /* on garde tes réglages de base mais on espace un peu plus */
       .controls {
@@ -262,13 +261,13 @@
         <p><span>Conception :</span> Tozz</p>
       </div>
     </div>
-
-    <h1>TBC – BIS Loots by MEUPORG</h1>
-    <p class="subtitle">
-      Choisissez un raid, un boss, une classe et/ou un rôle pour afficher les loots. Survolez le nom pour voir le
-      tooltip Wowhead.
-    </p>
     <div class="wide-row">
+      <h1>TBC – BIS Loots by MEUPORG</h1>
+      <p class="subtitle">
+        Choisissez un raid, un boss, une classe et/ou un rôle pour afficher les loots. Survolez le nom pour voir le
+        tooltip Wowhead.
+      </p>
+
       <div id="filtersBar" class="filters-bar">
         <div class="controls">
           <!-- Raid -->
@@ -806,60 +805,59 @@
       }
 
       // Initialisation
- document.addEventListener("DOMContentLoaded", () => {
-  const raidSelect  = document.getElementById("raidSelect");
-  const bossSelect  = document.getElementById("bossSelect");
-  const classSelect = document.getElementById("classFilter");
-  const roleSelect  = document.getElementById("roleFilter");
-  const bisSelect   = document.getElementById("bisFilter");
-  const filtersBar  = document.getElementById("filtersBar");
+      document.addEventListener("DOMContentLoaded", () => {
+        const raidSelect = document.getElementById("raidSelect");
+        const bossSelect = document.getElementById("bossSelect");
+        const classSelect = document.getElementById("classFilter");
+        const roleSelect = document.getElementById("roleFilter");
+        const bisSelect = document.getElementById("bisFilter");
+        const filtersBar = document.getElementById("filtersBar");
 
-  // Remplir le select des raids
-  RAIDS.forEach((raid) => {
-    const opt = document.createElement("option");
-    opt.value = raid.id;
-    opt.textContent = raid.name;
-    raidSelect.appendChild(opt);
-  });
+        // Remplir le select des raids
+        RAIDS.forEach((raid) => {
+          const opt = document.createElement("option");
+          opt.value = raid.id;
+          opt.textContent = raid.name;
+          raidSelect.appendChild(opt);
+        });
 
-  const defaultRaid = RAIDS[0]?.id || "";
-  if (defaultRaid) {
-    raidSelect.value = defaultRaid;
-    loadRaid(defaultRaid);
-  }
+        const defaultRaid = RAIDS[0]?.id || "";
+        if (defaultRaid) {
+          raidSelect.value = defaultRaid;
+          loadRaid(defaultRaid);
+        }
 
-  raidSelect.addEventListener("change", () => {
-    const id = raidSelect.value;
-    if (id) loadRaid(id);
-  });
+        raidSelect.addEventListener("change", () => {
+          const id = raidSelect.value;
+          if (id) loadRaid(id);
+        });
 
-  bossSelect.addEventListener("change", renderTable);
-  classSelect.addEventListener("change", renderTable);
-  roleSelect.addEventListener("change", renderTable);
-  bisSelect.addEventListener("change", renderTable);
+        bossSelect.addEventListener("change", renderTable);
+        classSelect.addEventListener("change", renderTable);
+        roleSelect.addEventListener("change", renderTable);
+        bisSelect.addEventListener("change", renderTable);
 
-  // --- Sticky background trigger via scroll ---
-  let stickyOffset = filtersBar.offsetTop;
+        // --- Sticky background trigger via scroll ---
+        let stickyOffset = filtersBar.offsetTop;
 
-  function handleSticky() {
-    if (window.scrollY > stickyOffset) {
-      filtersBar.classList.add("sticky-active");
-    } else {
-      filtersBar.classList.remove("sticky-active");
-    }
-  }
+        function handleSticky() {
+          if (window.scrollY > stickyOffset) {
+            filtersBar.classList.add("sticky-active");
+          } else {
+            filtersBar.classList.remove("sticky-active");
+          }
+        }
 
-  window.addEventListener("scroll", handleSticky);
-  window.addEventListener("resize", () => {
-    // si le layout bouge (resize), on recalcule la position de référence
-    stickyOffset = filtersBar.offsetTop;
-    handleSticky();
-  });
+        window.addEventListener("scroll", handleSticky);
+        window.addEventListener("resize", () => {
+          // si le layout bouge (resize), on recalcule la position de référence
+          stickyOffset = filtersBar.offsetTop;
+          handleSticky();
+        });
 
-  // appel initial (au cas où on arrive déjà scrollé)
-  handleSticky();
-});
-
+        // appel initial (au cas où on arrive déjà scrollé)
+        handleSticky();
+      });
     </script>
   </body>
 </html>
