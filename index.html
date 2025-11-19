@@ -162,7 +162,7 @@ a:hover {
   </div>
   <div class="credits-list">
     <p><span>Datamining :</span> Kerishai</p>
-    <p><span>Ideas & Seeking :</span> Captp</p>
+    <p><span>Ideas & Research :</span> Captp</p>
     <p><span>Conception :</span> Tozz</p>
   </div>
 </div>
@@ -173,15 +173,28 @@ Choisissez un raid, un boss, une classe et/ou un rôle pour afficher les loots. 
 </p>
 
 <div class="controls">
+  <!-- Raid -->
   <label for="raidSelect">Raid :</label>
   <select id="raidSelect"></select>
 
+  <!-- Boss -->
   <label for="bossSelect">Boss :</label>
   <select id="bossSelect">
     <option value="">Tous les boss</option>
   </select>
 
-  <!-- Nouveau : filtre Classe -->
+  <!-- BIS -->
+  <label for="bisFilter">BIS :</label>
+  <select id="bisFilter">
+    <option value="">Tous</option>
+    <option value="BP1">BP1</option>
+    <option value="BP2">BP2</option>
+    <option value="BP3">BP3</option>
+    <option value="BP4">BP4</option>
+    <option value="BP5">BP5</option>
+  </select>
+
+  <!-- Classe -->
   <label for="classFilter">Classe :</label>
   <select id="classFilter">
     <option value="">Toutes</option>
@@ -196,7 +209,7 @@ Choisissez un raid, un boss, une classe et/ou un rôle pour afficher les loots. 
     <option value="Mage">Mage</option>
   </select>
 
-  <!-- Nouveau : filtre Rôle -->
+  <!-- Rôle -->
   <label for="roleFilter">Rôle :</label>
   <select id="roleFilter">
     <option value="">Tous</option>
@@ -309,7 +322,7 @@ const CLASS_KEYS = Object.keys(wowClassMap).sort((a, b) => b.length - a.length);
 
 // === Détection Classe / Rôle pour le filtrage ===================
 
-// Classe -> tokens à chercher dans (spec1 + spec2 + priority)
+// Classe -> tokens à chercher dans PRIORITY
 const CLASS_FILTERS = {
   "Paladin":  ["paladin", "hpal", "ppal", "pret", "rpal"],
   "Guerrier": ["warrior", "pwar", "fury", "arms", "war tank"],
@@ -322,7 +335,7 @@ const CLASS_FILTERS = {
   "Mage":     ["mage"]
 };
 
-// Rôle -> tokens à chercher
+// Rôle -> tokens à chercher dans PRIORITY
 const ROLE_FILTERS = {
   "Tank": [
     "tank", "prot warrior", "prot paladin", "pwar", "ppal",
@@ -335,12 +348,38 @@ const ROLE_FILTERS = {
   "DPS": [
     "dps", "boomy", "boom", "elem", "elemental", "sp",
     "rogue", "rog", "chasseur", "hunt", "bmhunt", "survhunt",
-    "fury", "arms", "pret", "pret", "feral", "cat", "démo", "warlock",
+    "fury", "arms", "pret", "feral", "cat", "démo", "warlock",
     "lock", "mage"
   ]
 };
 
-// Retourne les sets {classes, roles} détectés pour une ligne
+// Combos classe + rôle pour un match plus strict
+const CLASS_ROLE_COMBOS = {
+  "Paladin:Tank": ["ppal", "prot paladin", "paladin prot"],
+  "Paladin:Heal": ["hpal", "holy paladin"],
+  "Paladin:DPS":  ["pret"],
+
+  "Guerrier:Tank": ["pwar", "prot warrior", "war tank"],
+  "Guerrier:DPS":  ["fury", "arms"],
+
+  "Druide:Tank": ["bear", "feral tank"],
+  "Druide:Heal": ["rdru", "resto druid"],
+  "Druide:DPS":  ["boomy", "feral", "cat"],
+
+  "Chaman:Heal": ["rcham", "resto shaman"],
+  "Chaman:DPS":  ["amélio", "elem"],
+
+  "Prêtre:Heal": ["hpri"],
+  "Prêtre:DPS":  ["sp"],
+
+  "Chasseur:DPS": ["chasseur", "bmhunt", "survhunt"],
+
+  "Voleur:DPS":   ["rogue", "rog"],
+  "Démoniste:DPS":["démo"],
+  "Mage:DPS":     ["mage"]
+};
+
+// Retourne les sets {classes, roles} détectés pour une ligne (SUR PRIORITY UNIQUEMENT)
 function getRowMeta(row) {
   const txt = (row.priority || "").toLowerCase();
 
@@ -360,6 +399,18 @@ function getRowMeta(row) {
   }
 
   return { classes, roles };
+}
+
+// Vérifie si un couple (classe, rôle) est bien présent dans PRIORITY
+function classRoleMatchesRow(row, classFilter, roleFilter) {
+  if (!classFilter || !roleFilter) return true;
+
+  const key = classFilter + ":" + roleFilter;
+  const combos = CLASS_ROLE_COMBOS[key];
+  if (!combos || !combos.length) return true;
+
+  const txt = (row.priority || "").toLowerCase();
+  return combos.some(token => txt.includes(token.toLowerCase()));
 }
 
 // === CSV parser maison (gère les quotes, virgules, retours) =====
@@ -405,11 +456,11 @@ function parseCSV(text) {
   return rows;
 }
 
-// Transforme en objets avec les noms de colonnes
+// Transforme en objets avec noms de colonnes en minuscule
 function csvToObjects(text) {
   const rows = parseCSV(text);
   if (!rows.length) return [];
-  const headers = rows[0].map(h => h.trim());
+  const headers = rows[0].map(h => h.trim().toLowerCase());
   const data = [];
 
   for (let i = 1; i < rows.length; i++) {
@@ -424,7 +475,7 @@ function csvToObjects(text) {
   return data;
 }
 
-// Helpers pour la mise en forme texte
+// Helpers texte
 function escapeHTML(str) {
   return str
     .replace(/&/g, "&amp;")
@@ -479,83 +530,48 @@ function populateBossSelect() {
   });
 }
 
-  // Combos classe + rôle pour un match strict sur la colonne priorité
-const CLASS_ROLE_COMBOS = {
-  "Paladin:Tank": ["ppal", "prot paladin", "paladin prot"],
-  "Paladin:Heal": ["hpal", "holy paladin"],
-  "Paladin:DPS":  ["pret"],
-
-  "Guerrier:Tank": ["pwar", "prot warrior", "war tank"],
-  "Guerrier:DPS":  ["fury", "arms"],
-
-  "Druide:Tank": ["bear", "feral tank"],
-  "Druide:Heal": ["rdru", "resto druid"],
-  "Druide:DPS":  ["boomy", "feral", "cat"],
-
-  "Chaman:Heal": ["rcham", "resto shaman"],
-  "Chaman:DPS":  ["amélio", "elem"],
-
-  "Prêtre:Heal": ["hpri"],
-  "Prêtre:DPS":  ["sp"],
-
-  "Chasseur:DPS": ["chasseur", "bmhunt", "survhunt"],
-
-  "Voleur:DPS":   ["rogue", "rog"],
-  "Démoniste:DPS":["démo"],
-  "Mage:DPS":     ["mage"]
-};
-
-// Vérifie si, pour une ligne donnée, un couple (classe, rôle) est bien présent
-function classRoleMatchesRow(row, classFilter, roleFilter) {
-  if (!classFilter || !roleFilter) return true; // si un seul des deux est filtré, on ne durcit pas
-
-  const key = classFilter + ":" + roleFilter;
-  const combos = CLASS_ROLE_COMBOS[key];
-  if (!combos || !combos.length) {
-    // pas de combos définis pour ce couple -> on ne bloque pas
-    return true;
-  }
-
-  const txt = (row.priority || "").toLowerCase();
-
-  return combos.some(token => txt.includes(token.toLowerCase()));
-}
-
-  
-// Rendu du tableau (avec filtres boss + classe + rôle)
+// Rendu du tableau (boss + BIS + classe + rôle)
 function renderTable() {
-  const tbody = document.getElementById("lootBody");
-  tbody.innerHTML = "";
-
+  const tbody       = document.getElementById("lootBody");
   const bossFilter  = document.getElementById("bossSelect").value;
+  const bisFilterEl = document.getElementById("bisFilter");
+  const bisFilter   = bisFilterEl ? bisFilterEl.value : "";
   const classFilter = document.getElementById("classFilter").value;
   const roleFilter  = document.getElementById("roleFilter").value;
 
+  tbody.innerHTML = "";
+
   const filtered = currentData.filter(row => {
-    // Filtre boss
+    // Boss
     if (bossFilter && (row.boss || "").trim() !== bossFilter) {
       return false;
     }
 
-    // Métadonnées de la ligne
-const { classes, roles } = getRowMeta(row);
+    // BIS
+    if (bisFilter) {
+      const rowBis = (row.bis || "").trim();
+      if (rowBis !== bisFilter) return false;
+    }
 
-// filtre classe seule
-if (classFilter && !classes.has(classFilter)) {
-  return false;
-}
+    // Métadonnées (PRIORITY ONLY)
+    const { classes, roles } = getRowMeta(row);
 
-// filtre rôle seul
-if (roleFilter && !roles.has(roleFilter)) {
-  return false;
-}
+    // Classe seule
+    if (classFilter && !classes.has(classFilter)) {
+      return false;
+    }
 
-// combo classe + rôle : on durcit avec les patterns
-if (classFilter && roleFilter) {
-  if (!classRoleMatchesRow(row, classFilter, roleFilter)) {
-    return false;
-  }
-}
+    // Rôle seul
+    if (roleFilter && !roles.has(roleFilter)) {
+      return false;
+    }
+
+    // Combo classe + rôle : check plus strict
+    if (classFilter && roleFilter) {
+      if (!classRoleMatchesRow(row, classFilter, roleFilter)) {
+        return false;
+      }
+    }
 
     return true;
   });
@@ -621,14 +637,13 @@ if (classFilter && roleFilter) {
   applyBisRarity();
   applyClassColors();
 
-  // Refresh Wowhead (icônes + couleur de lien)
   if (typeof $WowheadPower !== "undefined" &&
       typeof $WowheadPower.refreshLinks === "function") {
     $WowheadPower.refreshLinks();
   }
 }
 
-// Applique les couleurs de rareté BIS
+// Couleurs de rareté BIS
 function applyBisRarity() {
   const rows = document.querySelectorAll("#lootBody tr");
   rows.forEach(row => {
@@ -656,7 +671,7 @@ function applyBisRarity() {
   });
 }
 
-// Applique les couleurs de classes dans la colonne Priorité
+// Couleurs de classes dans la colonne Priorité
 function applyClassColors() {
   const rows = document.querySelectorAll("#lootBody tr");
   rows.forEach(row => {
@@ -682,6 +697,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const bossSelect  = document.getElementById("bossSelect");
   const classSelect = document.getElementById("classFilter");
   const roleSelect  = document.getElementById("roleFilter");
+  const bisSelect   = document.getElementById("bisFilter");
 
   // Remplir le select des raids
   RAIDS.forEach(raid => {
@@ -711,6 +727,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   roleSelect.addEventListener("change", () => {
+    renderTable();
+  });
+
+  bisSelect.addEventListener("change", () => {
     renderTable();
   });
 });
