@@ -9,6 +9,7 @@ body {
   background: #111827;
   color: #e5e7eb;
   padding: 2rem;
+  overflow-x: hidden;
 }
 h1 {
   color: #fbbf24;
@@ -76,6 +77,7 @@ th, td {
   font-size: 1.05rem;
   vertical-align: middle;
 }
+
 th {
   background: #1f2937;
   font-weight: 600;
@@ -83,6 +85,9 @@ th {
 }
 tr:nth-child(even) td {
   background: #030712;
+}
+  #lootBody tr:hover td {
+  background: #111827;
 }
 a:not([href*="wowhead.com"]) {
   color: #60a5fa;
@@ -93,6 +98,51 @@ a {
 a:hover {
   text-decoration: underline;
 }
+  .controls label {
+  font-size: 1rem;      /* légèrement plus grand */
+  font-weight: 600;     /* bold */
+  color: #d1d5db;
+}
+
+label[for="classFilter"],
+label[for="roleFilter"] {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #d1d5db;
+}
+.selector-block {
+  margin-bottom: 1.5rem; /* espace supplémentaire entre les groupes */
+}
+
+.filters-bar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: #111827;
+  border-bottom: 1px solid #374151;
+
+  /* pleine largeur comme la table */
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 0.5rem 2rem 0.75rem; /* tu gardes un peu de marge interne */
+}
+
+/* on garde tes réglages de base mais on espace un peu plus */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+/* labels plus gros + gras comme demandé précédemment */
+.controls label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #d1d5db;
+}
+
 
 /* Titre de boss */
 .boss-title td {
@@ -171,19 +221,23 @@ a:hover {
 <p class="subtitle">
 Choisissez un raid, un boss, une classe et/ou un rôle pour afficher les loots. Survolez le nom pour voir le tooltip Wowhead.
 </p>
-
+<div id="filtersBar" class="filters-bar">
 <div class="controls">
   <!-- Raid -->
+  <div class="controls selector-block">
   <label for="raidSelect">Raid :</label>
   <select id="raidSelect"></select>
+  </div>
 
   <!-- Boss -->
+  <div class="controls selector-block">
   <label for="bossSelect">Boss :</label>
   <select id="bossSelect">
     <option value="">Tous les boss</option>
   </select>
-
+</div>
   <!-- BIS -->
+  <div class="controls selector-block">
   <label for="bisFilter">BIS :</label>
   <select id="bisFilter">
     <option value="">Tous</option>
@@ -193,8 +247,9 @@ Choisissez un raid, un boss, une classe et/ou un rôle pour afficher les loots. 
     <option value="BP4">BP4</option>
     <option value="BP5">BP5</option>
   </select>
-
+</div>
   <!-- Classe -->
+  <div class="controls selector-block">
   <label for="classFilter">Classe :</label>
   <select id="classFilter">
     <option value="">Toutes</option>
@@ -208,8 +263,9 @@ Choisissez un raid, un boss, une classe et/ou un rôle pour afficher les loots. 
     <option value="Démoniste">Démoniste</option>
     <option value="Mage">Mage</option>
   </select>
-
+</div>
   <!-- Rôle -->
+  <div class="controls selector-block">
   <label for="roleFilter">Rôle :</label>
   <select id="roleFilter">
     <option value="">Tous</option>
@@ -218,7 +274,8 @@ Choisissez un raid, un boss, une classe et/ou un rôle pour afficher les loots. 
     <option value="DPS">DPS</option>
   </select>
 </div>
-
+    </div>
+ </div>
 <table>
   <thead>
     <tr>
@@ -235,7 +292,7 @@ Choisissez un raid, un boss, une classe et/ou un rôle pour afficher les loots. 
     <!-- Rempli dynamiquement -->
   </tbody>
 </table>
-
+ 
 <script>
 // === Config des raids (chemins CSV) ===============================
 const RAIDS = [
