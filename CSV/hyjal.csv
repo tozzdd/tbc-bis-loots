@@ -1,126 +1,126 @@
 boss,loot_name,loot_url,type,bis,spec1,spec2,priority,notes
 Rage Winterchill,Brassards bénis en adamantite,https://www.wowhead.com/tbc/fr/item=30862,Poignets - Plaques,,Holy Paladin,Paladin,Holy Paladin,
-Rage Winterchill,Espauliers tachés de sang,https://www.wowhead.com/tbc/fr/item=30866,Épaules - Plaques,,Melee,Tank,Ret/Fury/Arms > PWar,
-Rage Winterchill,Brassards de martyre,https://www.wowhead.com/tbc/fr/item=30871,Poignets - Tissu,BP5,Heal,Caster DPS,"HPri > RDru/RSha > 
+Rage Winterchill,Espauliers tachés de sang,https://www.wowhead.com/tbc/fr/item=30866,Épaules - Plaques,,Melee,Tank,PRet/Fury/Arms > PWar,
+Rage Winterchill,Brassards de martyre,https://www.wowhead.com/tbc/fr/item=30871,Poignets - Tissu,BP5,Heal,Caster DPS,"HPri > RDru/Rcham > 
 Mage > HPal",HPri BP5
-Rage Winterchill,Brassards du guide,https://www.wowhead.com/tbc/fr/item=30864,Poignets - Mailles,,Physical DPS,Tank,Hunt > Enh > Ret/Fury/Arms,
-Rage Winterchill,Chronique des sombres secrets,https://www.wowhead.com/tbc/fr/item=30872,Main gauche,BP5,Caster DPS,Heal,"Mage/Shadow/Lock > 
-Ele > Boom > Ret","Mage BP5, Shadow BP5, 
+Rage Winterchill,Brassards du guide,https://www.wowhead.com/tbc/fr/item=30864,Poignets - Mailles,,Physical DPS,Tank,Chasseur > Amélio > PRet/Fury/Arms,
+Rage Winterchill,Chronique des sombres secrets,https://www.wowhead.com/tbc/fr/item=30872,Main gauche,BP5,Caster DPS,Heal,"Mage/SP/Lock > 
+Elem > Boomy > PRet","Mage BP5, Shadow BP5, 
 Lock BP5, Ele (Opt BP5)"
-Rage Winterchill,Crispins de dévastation,https://www.wowhead.com/tbc/fr/item=30870,Poignets - Tissu,BP3,Caster DPS,Heal,"Mage/Lock > Shadow > 
-Boom > Ele","Shadow BP3 (P1 Prio), 
+Rage Winterchill,Crispins de dévastation,https://www.wowhead.com/tbc/fr/item=30870,Poignets - Tissu,BP3,Caster DPS,Heal,"Mage/Lock > SP > 
+Boomy > Elem","Shadow BP3 (P1 Prio), 
 Mage (Opt BP5), Lock (Opt BP5)"
-Rage Winterchill,Crispins mortels,https://www.wowhead.com/tbc/fr/item=30863,Poignets - Cuir,BP5,Physical DPS,Tank,"Enh > Rog > Bear > 
-Ret/Fury/Arms > Hunt",Enh BP5
-Rage Winterchill,Menottes furieuses,https://www.wowhead.com/tbc/fr/item=30861,Poignets - Plaques,BP5,Melee,Tank,Ret/Fury/Arms > PWar,"Ret BP5, Fury/Arms BP5"
-Rage Winterchill,Brassards du vent hurlant,https://www.wowhead.com/tbc/fr/item=30869,Poignets - Mailles,BP5,Heal,Caster DPS,Holy Paladin/Resto Shaman,"HPal BP5, RSha BP5"
-Rage Winterchill,Brassards de récupération,https://www.wowhead.com/tbc/fr/item=30868,Poignets - Cuir,BP5,Heal,Caster DPS,RDru > RSha > HPal,RDru BP5
-Rage Winterchill,Bottes des eaux plates,https://www.wowhead.com/tbc/fr/item=30873,Pieds - Mailles,BP5,Heal,Caster DPS,Holy Paladin/Resto Shaman,"HPal BP5, RSha BP5"
-Rage Winterchill,Lame de pisteur,https://www.wowhead.com/tbc/fr/item=30865,Arme 1M - Dague,,Physical DPS,Tank,"Dag Rog > Rog > Hunt > 
-Fury > Enh",
-Anetheron,Collet d'Anetheron,https://www.wowhead.com/tbc/fr/item=30888,Taille - Tissu,BP5,Caster DPS,Heal,"Boom/Mage/Ele/
-Shadow/Lock > HPri","Boom BP5, Mage BP5, Ele BP5
+Rage Winterchill,Crispins mortels,https://www.wowhead.com/tbc/fr/item=30863,Poignets - Cuir,BP5,Physical DPS,Tank,"Amélio > Rogue > Bear > 
+PRet/Fury/Arms > Chasseur",Enh BP5
+Rage Winterchill,Menottes furieuses,https://www.wowhead.com/tbc/fr/item=30861,Poignets - Plaques,BP5,Melee,Tank,PRet/Fury/Arms > PWar,"Ret BP5, Fury/Arms BP5"
+Rage Winterchill,Brassards du vent hurlant,https://www.wowhead.com/tbc/fr/item=30869,Poignets - Mailles,BP5,Heal,Caster DPS,Holy Paladin/Rcham,"HPal BP5, RSha BP5"
+Rage Winterchill,Brassards de récupération,https://www.wowhead.com/tbc/fr/item=30868,Poignets - Cuir,BP5,Heal,Caster DPS,RDru > Rcham > HPal,RDru BP5
+Rage Winterchill,Bottes des eaux plates,https://www.wowhead.com/tbc/fr/item=30873,Pieds - Mailles,BP5,Heal,Caster DPS,Holy Paladin/Rcham,"HPal BP5, RSha BP5"
+Rage Winterchill,Lame de pisteur,https://www.wowhead.com/tbc/fr/item=30865,Arme 1M - Dague,,Physical DPS,Tank,"Dag Rogue > Rogue > Chasseur > 
+Fury > Amélio",
+Anetheron,Collet d'Anetheron,https://www.wowhead.com/tbc/fr/item=30888,Taille - Tissu,BP5,Caster DPS,Heal,"Boomy/Mage/Elem/
+SP/Lock > HPri","Boom BP5, Mage BP5, Ele BP5
 Shadow BP5, Lock BP5"
-Anetheron,Mules d'archevêque,https://www.wowhead.com/tbc/fr/item=30885,Pieds - Tissu,,Heal,Caster DPS,HPri > RDru/RSha > HPal,
-Anetheron,Bastion de lumière,https://www.wowhead.com/tbc/fr/item=30882,Bouclier,,Heal,Paladin/Shaman,Holy Paladin/Resto Shaman,
-Anetheron,Lame d'infamie,https://www.wowhead.com/tbc/fr/item=30881,Arme 1M - Épée,BP5,Physical DPS,Tank,"Sword Rog > Rog > 
-Hunt/Fury",Rog BP5
-Anetheron,Bourse de ceinture de don Alejandro,https://www.wowhead.com/tbc/fr/item=30879,Taille - Cuir,BP5,Physical DPS/ Bear,Physical DPS/ Tank,"Bear > Ret/Enh > 
-Cat/Rog/Fury/Arms > Hunt","Ret BP5, Cat BP3 (P2 Prio), 
+Anetheron,Mules d'archevêque,https://www.wowhead.com/tbc/fr/item=30885,Pieds - Tissu,,Heal,Caster DPS,HPri > RDru/Rcham > HPal,
+Anetheron,Bastion de lumière,https://www.wowhead.com/tbc/fr/item=30882,Bouclier,,Heal,Paladin/Shaman,Holy Paladin/Rcham,
+Anetheron,Lame d'infamie,https://www.wowhead.com/tbc/fr/item=30881,Arme 1M - Épée,BP5,Physical DPS,Tank,"Sword Rogue > Rogue > 
+Chasseur/Fury",Rog BP5
+Anetheron,Bourse de ceinture de don Alejandro,https://www.wowhead.com/tbc/fr/item=30879,Taille - Cuir,BP5,Physical DPS/ Bear,Physical DPS/ Tank,"Bear > PRet/Amélio > 
+Cat/Rogue/Fury/Arms > Chasseur","Ret BP5, Cat BP3 (P2 Prio), 
 Bear BP3, Fury/Arms BP3 (P2 Prio),
 Enh BP3, Rog BP3 (P2 Prio)"
-Anetheron,Sandales en cuir enchanté,https://www.wowhead.com/tbc/fr/item=30886,Pieds - Cuir,,Heal,Caster DPS,RDru > RSha > HPal,Comparable to Orca-Hide in SSC
+Anetheron,Sandales en cuir enchanté,https://www.wowhead.com/tbc/fr/item=30886,Pieds - Cuir,,Heal,Caster DPS,RDru > Rcham > HPal,Comparable to Orca-Hide in SSC
 Anetheron,Mantelet rougeoyant en acier,https://www.wowhead.com/tbc/fr/item=30878,Épaules - Plaques,,Holy Paladin,Paladin,Holy Paladin,
-Anetheron,Liens dorés de restauration,https://www.wowhead.com/tbc/fr/item=30887,Torse - Mailles,,Heal,Paladin/Shaman,Holy Paladin/Resto Shaman,
-Anetheron,Mantelet de Fielfurie,https://www.wowhead.com/tbc/fr/item=30884,Épaules - Tissu,BP5,Caster DPS,Heal,"Shadow/Lock > 
-Boom > Mage/Ele","Boom BP3 (Opt BP5), 
+Anetheron,Liens dorés de restauration,https://www.wowhead.com/tbc/fr/item=30887,Torse - Mailles,,Heal,Paladin/Shaman,Holy Paladin/Rcham,
+Anetheron,Mantelet de Fielfurie,https://www.wowhead.com/tbc/fr/item=30884,Épaules - Tissu,BP5,Caster DPS,Heal,"SP/Lock > 
+Boomy > Mage/Elem","Boom BP3 (Opt BP5), 
 Shadow BP5, Lock BP5"
-Anetheron,Pilier de férocité,https://www.wowhead.com/tbc/fr/item=30883,Arme 2M - Bâton,BP5,Feral Druid,Druid,Cat > Bear > Boom,"Cat BP5, Bear BP3 (P2 Prio)"
-Anetheron,La Volonté inflexible,https://www.wowhead.com/tbc/fr/item=30874,Arme 1M - Épée,BP5,Tank,Physical DPS,PWar > PPal > Rog > Fury,PWar BP5
-Anetheron,Moccassins du rôdeur rapide,https://www.wowhead.com/tbc/fr/item=30880,Pieds - Mailles,BP5,Physical DPS,Tank,Hunt > Enh > Ret/Fury/Arms,Hunt BP5
-Kaz'rogal,Echarpe d'Angelista,https://www.wowhead.com/tbc/fr/item=30895,Taille - Tissu,,Heal,Caster DPS,HPri > RDru/RSha/HPal,
+Anetheron,Pilier de férocité,https://www.wowhead.com/tbc/fr/item=30883,Arme 2M - Bâton,BP5,Feral Druid,Druid,Cat > Bear > Boomy,"Cat BP5, Bear BP3 (P2 Prio)"
+Anetheron,La Volonté inflexible,https://www.wowhead.com/tbc/fr/item=30874,Arme 1M - Épée,BP5,Tank,Physical DPS,PWar > PPal > Rogue > Fury,PWar BP5
+Anetheron,Moccassins du rôdeur rapide,https://www.wowhead.com/tbc/fr/item=30880,Pieds - Mailles,BP5,Physical DPS,Tank,Chasseur > Amélio > PRet/Fury/Arms,Hunt BP5
+Kaz'rogal,Echarpe d'Angelista,https://www.wowhead.com/tbc/fr/item=30895,Taille - Tissu,,Heal,Caster DPS,HPri > RDru/Rcham/HPal,
 Kaz'rogal,Epaulières de dompteur de bêtes,https://www.wowhead.com/tbc/fr/item=30892,Épaules - Mailles,BP5,Hunter,Physical DPS/ Tank,,"Hunt BP5
 Pet Crit +2%- Good into Wrath"
 Kaz'rogal,Ceinture de la fureur destructrice,https://www.wowhead.com/tbc/fr/item=30915,Taille - Plaques,,Melee,Tank,,
-Kaz'rogal,Ceinture du croissant de lune,https://www.wowhead.com/tbc/fr/item=30914,Taille - Cuir,,Boom/Ele,Caster DPS/ Heal,Boom/Ele Shaman,
-Kaz'rogal,Bottes de plumes légères noires,https://www.wowhead.com/tbc/fr/item=30891,Pieds - Cuir,,Physical DPS,Tank,"Rog > Cat > Enh > 
-Ret/Fury/Arms > Hunt",
-Kaz'rogal,Chaussures en suédine bleue,https://www.wowhead.com/tbc/fr/item=30894,Pieds - Tissu,BP5,Caster DPS,Heal,"Mage > Boom/Shadow/Lock
-> Ele",Mage BP5
-Kaz'rogal,Marteau d'expiation,https://www.wowhead.com/tbc/fr/item=30918,Arme 1M - Masse,,Heal,Caster DPS,RDru > HPal/HPri > RSha,
-Kaz'rogal,Cœur endurci de Kaz'rogal,https://www.wowhead.com/tbc/fr/item=30889,Bouclier,,Tank,Melee,PWar > PPal > Ret,
-Kaz'rogal,Jambières des éléments canalisés,https://www.wowhead.com/tbc/fr/item=30916,Jambes - Tissu,BP5,Caster DPS,Heal,"Boom/Shadow/Lock > 
-Ele > Mage","Boom BP5, Shadow BP5, 
+Kaz'rogal,Ceinture du croissant de lune,https://www.wowhead.com/tbc/fr/item=30914,Taille - Cuir,,Boom/Ele,Caster DPS/ Heal,Boomy/Elem chaman,
+Kaz'rogal,Bottes de plumes légères noires,https://www.wowhead.com/tbc/fr/item=30891,Pieds - Cuir,,Physical DPS,Tank,"Rogue > Cat > Amélio > 
+PRet/Fury/Arms > Chasseur",
+Kaz'rogal,Chaussures en suédine bleue,https://www.wowhead.com/tbc/fr/item=30894,Pieds - Tissu,BP5,Caster DPS,Heal,"Mage > Boomy/SP/Lock
+> Elem",Mage BP5
+Kaz'rogal,Marteau d'expiation,https://www.wowhead.com/tbc/fr/item=30918,Arme 1M - Masse,,Heal,Caster DPS,RDru > HPal/HPri > Rcham,
+Kaz'rogal,Cœur endurci de Kaz'rogal,https://www.wowhead.com/tbc/fr/item=30889,Bouclier,,Tank,Melee,PWar > PPal > PRet,
+Kaz'rogal,Jambières des éléments canalisés,https://www.wowhead.com/tbc/fr/item=30916,Jambes - Tissu,BP5,Caster DPS,Heal,"Boomy/SP/Lock > 
+Elem > Mage","Boom BP5, Shadow BP5, 
 Lock BP5, Ele BP3"
-Kaz'rogal,Mantelet tranche-fureur,https://www.wowhead.com/tbc/fr/item=30917,Épaules - Cuir,,Physical DPS/ Bear,Physical DPS/ Tank,"Bear > Rog > Cat > 
-Enh > Hunt/Fury/Arms",
-Kaz'rogal,Jambières touchées par le soleil en anneaux,https://www.wowhead.com/tbc/fr/item=30893,Jambes - Mailles,,Heal,Caster DPS,RSha > HPal,
-Kaz'rogal,Ceinturon de traqueur des vaux,https://www.wowhead.com/tbc/fr/item=30919,Wasit - Mailles,,Physical DPS,Tank,Hunt > Enh/Fury/Arms/Ret,
-Azgalor,Agonie infinie,https://www.wowhead.com/tbc/fr/item=30901,Arme 1M - Dague,BP5,Physical DPS,Tank,"Dag Rog > Hunt > 
-Rog > Fury/Enh",Hunt BP5
-Azgalor,Jambières à couture nouée,https://www.wowhead.com/tbc/fr/item=30900,Jambes - Mailles,BP5,Physical DPS,Tank,Hunt/Enh > Ret/Fury/Arms,"Hunt BP5, Enh BP5"
-Azgalor,Poncho de don Rodrigue,https://www.wowhead.com/tbc/fr/item=30899,Torse - Cuir,,Heal,Caster DPS,RDru > RSha/HPal,
+Kaz'rogal,Mantelet tranche-fureur,https://www.wowhead.com/tbc/fr/item=30917,Épaules - Cuir,,Physical DPS/ Bear,Physical DPS/ Tank,"Bear > Rogue > Cat > 
+Amélio > Chasseur/Fury/Arms",
+Kaz'rogal,Jambières touchées par le soleil en anneaux,https://www.wowhead.com/tbc/fr/item=30893,Jambes - Mailles,,Heal,Caster DPS,Rcham > HPal,
+Kaz'rogal,Ceinturon de traqueur des vaux,https://www.wowhead.com/tbc/fr/item=30919,Wasit - Mailles,,Physical DPS,Tank,Chasseur > Amélio/Fury/Arms/PRet,
+Azgalor,Agonie infinie,https://www.wowhead.com/tbc/fr/item=30901,Arme 1M - Dague,BP5,Physical DPS,Tank,"Dag Rogue > Chasseur > 
+Rogue > Fury/Amélio",Hunt BP5
+Azgalor,Jambières à couture nouée,https://www.wowhead.com/tbc/fr/item=30900,Jambes - Mailles,BP5,Physical DPS,Tank,Chasseur/Amélio > PRet/Fury/Arms,"Hunt BP5, Enh BP5"
+Azgalor,Poncho de don Rodrigue,https://www.wowhead.com/tbc/fr/item=30899,Torse - Cuir,,Heal,Caster DPS,RDru > Rcham/HPal,
 Azgalor,Ceinturon de l'espoir,https://www.wowhead.com/tbc/fr/item=30897,Taille - Plaques,BP3,Holy Paladin,Paladin,Holy Paladin,HPal BP3 (P2 Prio)
 Azgalor,Gloire du défenseur,https://www.wowhead.com/tbc/fr/item=30896,Torse - Plaques,,Tank,Melee,Prot Paladin/Prot Warrior,
-Azgalor,Culotte de marchand douteux,https://www.wowhead.com/tbc/fr/item=30898,Jambes - Cuir,BP5,Physical DPS/ Bear,Physical DPS/ Tank,"Bear > Cat/Rog/Enh > 
-Fury/Arms > Ret > Hunt","Bear BP5
+Azgalor,Culotte de marchand douteux,https://www.wowhead.com/tbc/fr/item=30898,Jambes - Cuir,BP5,Physical DPS/ Bear,Physical DPS/ Tank,"Bear > Cat/Rogue/Amélio > 
+Fury/Arms > PRet > Chasseur","Bear BP5
 - May adjust later due to Armor Pen"
 Azgalor,Gants du conquérant oublié,https://www.wowhead.com/tbc/fr/item=31092,Jeton d'armure,BP5,"Paladin/
-Lock/Priest",N/A,"PPal > HPal > ShadowLock 
-> HPri > Ret","PPal BP5, HPal BP3 (P2 Prio),
+Lock/Priest",,"PPal > HPal > ShadowLock 
+> HPri > PRet","PPal BP5, HPal BP3 (P2 Prio),
 Shadow BP3 (P1 Prio), Lock BP3
 T6- Paladin, Priest, Warlock"
 Azgalor,Gants du protecteur oublié,https://www.wowhead.com/tbc/fr/item=31094,Jeton d'armure,BP5,"Hunter/Shaman/
-Warrior",N/A,"Hunt/Ele > PWar/RSha > 
-Fury/Arms > Enh","Hunt BP5, Ele BP5
+Warrior",,"Chasseur/Elem > PWar/Rcham > 
+Fury/Arms > Amélio","Hunt BP5, Ele BP5
 T6 - Hunter, Shaman, Warrior"
 Azgalor,Gants du vainqueur oublié,https://www.wowhead.com/tbc/fr/item=31093,Jeton d'armure,BP5,"Druid/Mage/
-Rogue",N/A,"Bear > Mage/Rog > 
-Cat/Boom > RDru","Bear BP5, Mage BP5, Rog BP5,
+Rogue",,"Bear > Mage/Rogue > 
+Cat/Boomy > RDru","Bear BP5, Mage BP5, Rog BP5,
 Cat BP3, Boom BP3
 T6- Druid, Mage, Rogue"
 Archimonde,Egide de la concentration captivée d'Antonidas,https://www.wowhead.com/tbc/fr/item=30909,Bouclier,BP5,Ele/PPal,"Paladin/Shaman
-Warrior","Ele > PPal > HPal/RSha > 
-PWar > Ret",Ele BP5
-Archimonde,Apôtre d'Argus,https://www.wowhead.com/tbc/fr/item=30908,Arme 2M - Bâton,BP3,Heal,Caster DPS,RDru > HPri > RSha > HPal,RDru BP3
-Archimonde,Frappeur darde-éclairs,https://www.wowhead.com/tbc/fr/item=30906,Arc,BP5,Physical DPS,Tank,Hunt > PWar > Fury/Arms,Hunt BP5
-Archimonde,Trancheuse du cataclysme,https://www.wowhead.com/tbc/fr/item=30902,Arme 2M - Épée,BP5,Melee,Tank,Ret/Arms,"Ret BP5, Arms BP5"
-Archimonde,Jambières de l'éternité,https://www.wowhead.com/tbc/fr/item=30912,Jambes - Tissu,BP5,Heal,Caster DPS,Healers > Boom/Mage,"RDru BP5, HPal BP5, 
+Warrior","Elem > PPal > HPal/Rcham > 
+PWar > PRet",Ele BP5
+Archimonde,Apôtre d'Argus,https://www.wowhead.com/tbc/fr/item=30908,Arme 2M - Bâton,BP3,Heal,Caster DPS,RDru > HPri > Rcham > HPal,RDru BP3
+Archimonde,Frappeur darde-éclairs,https://www.wowhead.com/tbc/fr/item=30906,Arc,BP5,Physical DPS,Tank,Chasseur > PWar > Fury/Arms,Hunt BP5
+Archimonde,Trancheuse du cataclysme,https://www.wowhead.com/tbc/fr/item=30902,Arme 2M - Épée,BP5,Melee,Tank,PRet/Arms,"Ret BP5, Arms BP5"
+Archimonde,Jambières de l'éternité,https://www.wowhead.com/tbc/fr/item=30912,Jambes - Tissu,BP5,Heal,Caster DPS,Healers > Boomy/Mage,"RDru BP5, HPal BP5, 
 HPri BP5, RSha BP5"
-Archimonde,Garde-jambes de la rage infinie,https://www.wowhead.com/tbc/fr/item=30903,Jambes - Plaques,BP5,Melee,Tank,Fury/Arms > PWar > Ret,Fury/Arms BP5
-Archimonde,Cotte de mailles de la poursuite fiévreuse,https://www.wowhead.com/tbc/fr/item=30907,Torse - Mailles,,Physical DPS,Tank,Hunt > Ret > Enh,
-Archimonde,Corselet de minuit,https://www.wowhead.com/tbc/fr/item=30905,Torse - Cuir,BP5,Physical DPS,Tank,"Enh/Fury/Arms/Ret > 
-Cat/Rog > Bear > Hunt","Ret BP3, Enh BP5, Fury/Arms BP5"
-Archimonde,Robe de Rhonin,https://www.wowhead.com/tbc/fr/item=30913,Torse - Tissu,BP3,Caster DPS,Heal,Lock > Boom/Mage/Ele > Shadow,Lock BP3
+Archimonde,Garde-jambes de la rage infinie,https://www.wowhead.com/tbc/fr/item=30903,Jambes - Plaques,BP5,Melee,Tank,Fury/Arms > PWar > PRet,Fury/Arms BP5
+Archimonde,Cotte de mailles de la poursuite fiévreuse,https://www.wowhead.com/tbc/fr/item=30907,Torse - Mailles,,Physical DPS,Tank,Chasseur > PRet > Amélio,
+Archimonde,Corselet de minuit,https://www.wowhead.com/tbc/fr/item=30905,Torse - Cuir,BP5,Physical DPS,Tank,"Amélio/Fury/Arms/PRet > 
+Cat/Rogue > Bear > Chasseur","Ret BP3, Enh BP5, Fury/Arms BP5"
+Archimonde,Robe de Rhonin,https://www.wowhead.com/tbc/fr/item=30913,Torse - Tissu,BP3,Caster DPS,Heal,Lock > Boomy/Mage/Elem > SP,Lock BP3
 Archimonde,Emprise du sauveur,https://www.wowhead.com/tbc/fr/item=30904,Torse - Plaques,,Paladin,Warrior,,
-Archimonde,Sceptre de purification,https://www.wowhead.com/tbc/fr/item=30911,Main gauche,BP5,Heal,Caster DPS,HPri > RDru > RSha/HPal,HPri BP5
-Archimonde,Tempête de chaos,https://www.wowhead.com/tbc/fr/item=30910,Arme 1M - Épée,BP5,Caster DPS/ PPal,Caster DPS/ Heal/Paladin,PPal > Lock > Mage > Ret,"Mage BP5, PPal BP5, Lock BP5, 
+Archimonde,Sceptre de purification,https://www.wowhead.com/tbc/fr/item=30911,Main gauche,BP5,Heal,Caster DPS,HPri > RDru > Rcham/HPal,HPri BP5
+Archimonde,Tempête de chaos,https://www.wowhead.com/tbc/fr/item=30910,Arme 1M - Épée,BP5,Caster DPS/ PPal,Caster DPS/ Heal/Paladin,PPal > Lock > Mage > PRet,"Mage BP5, PPal BP5, Lock BP5, 
 Ret BP3 (1H Low Prio)"
 Archimonde,Heaume du conquérant oublié,https://www.wowhead.com/tbc/fr/item=31097,Jeton d'armure,BP5,"Paladin/
-Lock/Priest",N/A,"HPri > HPal > PPal > 
-Shadow/Lock > Ret","HPri BP5, HPal BP3
+Lock/Priest",,"HPri > HPal > PPal > 
+SP/Lock > PRet","HPri BP5, HPal BP3
 T6- Paladin, Priest, Warlock"
 Archimonde,Helm of the Forgotten Protector,https://tbcdb.com/?search=helm+of+the+forgotten,Jeton d'armure,BP3,"Hunter/Shaman/
-Warrior",N/A,"RSha > Ele > PWar > 
-Hunt/Mage > Enh/Fury/Arms","Ele BP3, RSha BP3
+Warrior",,"Rcham > Elem > PWar > 
+Chasseur/Mage > Amélio/Fury/Arms","Ele BP3, RSha BP3
 T6 - Hunter, Shaman, Warrior"
 Archimonde,Heaume du vainqueur oublié,https://www.wowhead.com/tbc/fr/item=31096,Jeton d'armure,BP5,"Druid/Mage/
-Rogue",N/A,"Bear > RDru > 
-Cat/Boom/Rog","Bear BP5, RDru BP5
+Rogue",,"Bear > RDru > 
+Cat/Boomy/Rogue","Bear BP5, RDru BP5
 T6- Druid, Mage, Rogue"
 Trash,Bottes de la lumière divine,https://www.wowhead.com/tbc/fr/item=32609,Pieds - Tissu,BP5,Heal,Caster DPS,"RDru/HPri > 
-RSha/HPal > Lock","RDru BP3, HPri BP3
+Rcham/HPal > Lock","RDru BP3, HPri BP3
 BP5 Debatable for High Stam Fights
 Good for Warlocks going into Wrath"
-Trash,Corselet des orages implacables,https://www.wowhead.com/tbc/fr/item=32592,Torse - Mailles,BP3,Caster DPS,Heal,Ele Shaman > HPal,Ele BP3
+Trash,Corselet des orages implacables,https://www.wowhead.com/tbc/fr/item=32592,Torse - Mailles,BP3,Caster DPS,Heal,Elem chaman > HPal,Ele BP3
 Trash,Sautoir des lames crantées,https://www.wowhead.com/tbc/fr/item=32591,Cou - Collier,,Physical DPS,Tank,DPS > PWar,"#2 P3 options for Physical DPS/PWar
 - May adjust later due to Armor Pen"
-Trash,Griffe de la fureur de lave,https://www.wowhead.com/tbc/fr/item=32946,Arme 1M - Pugilat,,Physical DPS,Tank,Enh > Fury > Rog > Hunt,Great set for Enh Shamans in Wrath
-Trash,Poing de la fureur de lave,https://www.wowhead.com/tbc/fr/item=32945,Off - H Fist,,Physical DPS,Tank,Fury > Rog > Enh > Hunt,Great set for Enh Shamans in Wrath
-Trash,Marteau du jugement,https://www.wowhead.com/tbc/fr/item=34009,Arme 1M - Masse,BP3,Caster DPS/ PPal,Caster DPS/ Heal/Paladin,"Boom > PPal > Ele > 
-Shadow > Ret",Boom BP3
+Trash,Griffe de la fureur de lave,https://www.wowhead.com/tbc/fr/item=32946,Arme 1M - Pugilat,,Physical DPS,Tank,Amélio > Fury > Rogue > Chasseur,Great set for Enh Shamans in Wrath
+Trash,Poing de la fureur de lave,https://www.wowhead.com/tbc/fr/item=32945,Off - H Fist,,Physical DPS,Tank,Fury > Rogue > Amélio > Chasseur,Great set for Enh Shamans in Wrath
+Trash,Marteau du jugement,https://www.wowhead.com/tbc/fr/item=34009,Arme 1M - Masse,BP3,Caster DPS/ PPal,Caster DPS/ Heal/Paladin,"Boomy > PPal > Elem > 
+SP > PRet",Boom BP3
 Trash,Pendentif enchâssé de flammes infernales,https://www.wowhead.com/tbc/fr/item=32589,Cou - Collier,BP5,Mage,Caster DPS/ Heal,Fire Mage > Mage > Lock,"Fire Mage BP5, Other Mage BP3"
-Trash,Cape du vide néantin,https://www.wowhead.com/tbc/fr/item=32590,Dos,BP5,Shadow/Lock,Caster DPS/ Heal,Lock > Shadow,"Shadow (Opt BP5), 
+Trash,Cape du vide néantin,https://www.wowhead.com/tbc/fr/item=32590,Dos,BP5,Shadow/Lock,Caster DPS/ Heal,Lock > SP,"Shadow (Opt BP5), 
 Lock BP5 (Until 80)"
 Trash,Linceul de pacification de Pépé,https://www.wowhead.com/tbc/fr/item=34010,Dos,BP5,Tank,Melee,PPal/PWar > Bear,"PPal BP5, PWar BP5"
 Boss Recipes,Dessin : Spinelle cramoisi miroitant,https://www.wowhead.com/tbc/fr/item=32285,Recette - Joaillerie,,,,,"Recipe = BoP, Gem = BoE
