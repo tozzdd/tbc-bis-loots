@@ -18,34 +18,6 @@
     <script src="https://wow.zamimg.com/widgets/power.js"></script>
   </head>
   <body>
-    <!-- ÉCRAN DE LOGIN -->
-    <div id="login-screen">
-      <div class="login-card">
-        <div class="login-title">Accès TBC – BIS Loots</div>
-        <div class="login-subtitle">Réservé à la guilde — identifiants requis.</div>
-
-        <form id="login-form">
-          <div class="form-group">
-            <label for="username">Identifiant</label>
-            <input type="text" id="username" autocomplete="username" required />
-          </div>
-
-          <div class="form-group">
-            <label for="password">Mot de passe</label>
-            <input type="password" id="password" autocomplete="current-password" required />
-          </div>
-
-          <div class="remember-row">
-            <input type="checkbox" id="remember" />
-            <label for="remember">Se souvenir de moi</label>
-          </div>
-
-          <button type="submit" class="login-button">Se connecter</button>
-          <div id="error" class="error-message"></div>
-        </form>
-      </div>
-    </div>
-
     <div id="app">
       <div class="credits-container">
         <div class="bmc-button">
@@ -141,44 +113,6 @@
       </div>
     </div>
     <script>
-      //Login
-      const VALID_USERNAME = "guild"; // 🔥 change ici
-      const VALID_PASSWORD = "venomous"; // 🔥 change ici
-
-      const loginScreen = document.getElementById("login-screen");
-      const app = document.getElementById("app");
-      const form = document.getElementById("login-form");
-      const error = document.getElementById("error");
-      const remember = document.getElementById("remember");
-
-      function markLoggedIn(persist) {
-        loginScreen.style.display = "none";
-        app.style.display = "block";
-
-        if (persist) {
-          localStorage.setItem("tbc_bis_logged_in", "1");
-        }
-      }
-
-      (function () {
-        if (localStorage.getItem("tbc_bis_logged_in") === "1") {
-          markLoggedIn(false);
-        }
-      })();
-
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        const username = document.getElementById("username").value.trim();
-        const password = document.getElementById("password").value;
-
-        if (username === VALID_USERNAME && password === VALID_PASSWORD) {
-          error.textContent = "";
-          markLoggedIn(remember.checked);
-        } else {
-          error.textContent = "Identifiant ou mot de passe incorrect.";
-        }
-      });
-
       // === Config des raids (chemins CSV) ===============================
       const RAIDS = [
         { id: "karazhan", name: "[P1] Karazhan", csv: "CSV/karazhan.csv" },
