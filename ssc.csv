@@ -1,146 +1,38 @@
 boss,loot_name,loot_url,type,bis,spec1,spec2,priority,notes
 Hydross the Unstable,Bague de vile aggressivité,https://www.wowhead.com/tbc/fr/item=33055,Doigt - Anneau,,Bear,Physical DPS/ Tank,Bear,
 Hydross the Unstable,Poignets de guerre de Brassenoire,https://www.wowhead.com/tbc/fr/item=30047,Poignets - Mailles,,HPal/RSha,Paladin/Shaman,Holy Paladin/Rcham,
-Hydross the Unstable,Bottes du cauchemar changeant,https://www.wowhead.com/tbc/fr/item=30050,Pieds - Tissu,BP5,Shadow/Lock,Caster DPS/ Heal,Lock > SP,""Shadow BP2, Lock BP5""
 Hydross the Unstable,Heaume lumineux de justice,https://www.wowhead.com/tbc/fr/item=30048,Tête - Plaques,,Holy Paladin,Paladin,Holy Paladin,
-Hydross the Unstable,Brassepierre,https://www.wowhead.com/tbc/fr/item=30049,Main gauche,BP2,Caster DPS,Caster DPS/ Heal/Ret,Boomy/Elem/SP/Lock > Mage > PRet,""Boom BP2, Ele BP2, Shadow BP2, Lock BP2, Ret BP2 (not prio)""
 Hydross the Unstable,Idole de la déesse du croissant,https://www.wowhead.com/tbc/fr/item=30051,Relique - Druide,BP5,Resto Druid,Druid,RDru > Boomy/Feral,RDru BP5
-Hydross the Unstable,Racine vivante du Cœur-sauvage,https://www.wowhead.com/tbc/fr/item=30664,Bijou - Druide,BP2,RDru/Boom,Feral,RDru > Boomy > Feral,""RDru BP2, Boom BP2""
 Hydross the Unstable,Espauliers du danseur de guerre,https://www.wowhead.com/tbc/fr/item=30053,Épaules - Plaques,BP2,Melee,Tank,Fury/Arms > PRet/PWar > PPal,Fury/Arms BP2 (P1 Prio)
 Hydross the Unstable,Corselet de général des forestiers,https://www.wowhead.com/tbc/fr/item=30054,Torse - Mailles,BP2,Physical DPS,Physical DPS/ Tank,SurvHunt > Chasseur > PRet/Amélio > Fury/Arms,Surv Hunt BP2
-Hydross the Unstable,Anneau de létalité,https://www.wowhead.com/tbc/fr/item=30052,Doigt - Anneau,BP4,Physical DPS/ Bear,Physical DPS/ Tank,""Cat > Bear > 
-Chasseur/Rogue/Amélio > PRet > 
-Fury/Arms > PWar/PPal"",""Cat BP4, Bear BP2, Hunt BP2, 
-Rog BP2, Enh BP2""
 Hydross the Unstable,Robe des échos haineux,https://www.wowhead.com/tbc/fr/item=30056,Torse - Tissu,,Caster DPS,Heal,,
 Hydross the Unstable,Scarabée de déplacement,https://www.wowhead.com/tbc/fr/item=30629,Bijou,BP5,Tank,Melee,PWar > Bear/PPal,PWar BP5 (MiBISation)
-Hydross the Unstable,Protège-épaules de l'étranger,https://www.wowhead.com/tbc/fr/item=30055,Épaules - Cuir,BP5,Physical DPS/ Bear,Physical DPS/ Tank,Rogue/Amélio > Cat/PRet > Bear > Fury/Arms > Chasseur,""Cat BP3, Ret BP5, 
-Rog BP5, Enh BP5""
-Hydross the Unstable,Couvre-bras de purification,https://www.wowhead.com/tbc/fr/item=32516,Poignets - Tissu,BP5,""Healers/
-Mage/Boom"",Caster DPS/ Heal,RDru > HPal > HPri/Rcham > Mage > Boomy > Lock/SP/Elem,""RDru BP5, Mage BP2, HPal BP2, HPri BP2, RSha BP2""
 The Lurker Below,Anneau de conquête ancestral,https://www.wowhead.com/tbc/fr/item=30061,Doigt - Anneau,BP2,Physical DPS,Physical DPS/ Tank,PRet > Feral/Chasseur > Fury/Arms/Rogue/Amélio,Ret BP2
-The Lurker Below,Bottes de frappe sans effort,https://www.wowhead.com/tbc/fr/item=30060,Pieds - Cuir,BP3,Feral/Rogue,Physical DPS/ Tank,Bear > Cat > Rogue,""Bear BP3, Cat BP2, 
-Rog BP2 (P1 Prio)""
-The Lurker Below,Brassards d'éradication,https://www.wowhead.com/tbc/fr/item=30057,Poignets - Plaques,BP2,Melee,Tank,PRet/Fury/Arms>PWar>PPal,""Ret BP2, Fury/Arms BP2""
 The Lurker Below,Sautoir de la fureur animiste,https://www.wowhead.com/tbc/fr/item=30059,Cou - Collier,,Physical DPS,Physical DPS/ Tank,,
-The Lurker Below,Corde des terreurs hurlantes,https://www.wowhead.com/tbc/fr/item=30064,Taille - Tissu,BP2,Caster DPS/ HPriest,Caster DPS/ Heal,""Boomy/Lock/Mage >
-Elem/SP > HPri"",""Boom BP2, Mage BP2, HPri BP2, HPri BP2 (Primal Mooncloth Prio), Shadow BP2, Ele BP2""
 The Lurker Below,Boucle d'oreille de la méditation expressive,https://www.wowhead.com/tbc/fr/item=30665,Bijou - Priest,BP2,Holy Priest,Priest,HPriest > SP,HPri BP2
 The Lurker Below,Cuirasse luminescente de vérité,https://www.wowhead.com/tbc/fr/item=30065,Torse - Plaques,,Holy Paladin,Paladin,Holy Paladin,
 The Lurker Below,Sylve-poignets de Remulos,https://www.wowhead.com/tbc/fr/item=30062,Poignets - Cuir,,Heal,Caster DPS/ Heal,RDru > HPal/Rcham,
 The Lurker Below,Libram de la vérité absolue,https://www.wowhead.com/tbc/fr/item=30063,Relique - Paladin,BP5,Holy Paladin,Paladin,HPal > PRet/PPal,HPal BP5
-The Lurker Below,Massette des marées,https://www.wowhead.com/tbc/fr/item=30058,Arme 1M - Masse,BP2,Tank/Rogue,Physical DPS/ Tank,""PWar > Rogue > Amélio > 
-PPal > Fury"",""PWar BP2, Rog BP2 (Offhand)""
-The Lurker Below,Bottes de marcheur des tempêtes,https://www.wowhead.com/tbc/fr/item=30066,Pieds - Mailles,BP2,HPal/RSha,Paladin/Shaman,""HPal/Rcham > Elem > 
-PPal/PRet/Amélio"",""HPal BP2, RSha BP2""
-The Lurker Below,Le sceau de Danzalar,https://www.wowhead.com/tbc/fr/item=33054,Doigt - Anneau,BP2,Tank,ALL,Bear > PPal > Boomy PvP,""Bear BP2, PPal opt, PvP All""
-The Lurker Below,Bottes en velours du gardien,https://www.wowhead.com/tbc/fr/item=30067,Pieds - Tissu,BP2,Caster DPS,Heal,Boomy/Mage/Elem > SP/Lock,""Boom BP2, Mage BP2, Ele BP2""
 Leotheras the Blind,Protège-épaules barbelés de corail,https://www.wowhead.com/tbc/fr/item=30097,Épaules - Mailles,BP2,Heal,Caster DPS,HPal > Rcham,HPal BP2
-Leotheras the Blind,Croc du léviathan,https://www.wowhead.com/tbc/fr/item=30095,Arme 1M - Épée,BP2,""PPal/Mage/
-Lock"",Paladin,PPal > Mage/Lock > PRet,""Mage BP2, PPal BP2, Lock BP2, 
-Ret BP2 (1H Low Prio)""
 Leotheras the Blind,Ceinturon de l'invulnérable,https://www.wowhead.com/tbc/fr/item=30096,Taille - Plaques,BP2,Tank,Melee,PPal > PWar,PPal BP2
 Leotheras the Blind,Bottes en peau d'épaulard,https://www.wowhead.com/tbc/fr/item=30092,Pieds - Cuir,,Heal,Caster DPS,,
 Leotheras the Blind,Poignets de la visée précise de traqueur,https://www.wowhead.com/tbc/fr/item=30091,Poignets - Mailles,,Physical DPS,Tank,Chasseur/Amélio/Fury/Arms> PRet,
-Leotheras the Blind,Talisman du tsunami,https://www.wowhead.com/tbc/fr/item=30627,Bijou,BP5,Physical DPS/ Tank,Physical DPS/ Tank,""Cat/Chasseur > PWar > Bear >
-PRet/Amélio > Rogue/Fury/Arms"",""Cat BP5, Hunt BP5,
-PWar BP5(Threat), Bear BP3(Threat), 
-Ret BP2, Enh BP2""
-Leotheras the Blind,Gants du champion vaincu,https://www.wowhead.com/tbc/fr/item=30239,Jeton d'armure,BP2,""Paladin/Rogue/
-Shaman"",,""Rcham > Elem/Rogue > PPal > 
-PRet > HPal/Amélio"",""Ele BP2, Rog BP2, RSha BP2
-T5- Paladin, Rogue, Shaman""
-Leotheras the Blind,Gants du défenseur vaincu,https://www.wowhead.com/tbc/fr/item=30240,Jeton d'armure,BP2,""Druid/Priest/
-Warrior"",,""RDru/HPri > SP > 
-Bear/PWar > 
-Cat/Boomy/Fury/Arms"",""RDru BP2, HPri BP2, Shadow BP2
-T5- Druid, Priest, Warrior""
-Leotheras the Blind,Gants du héros vaincu,https://www.wowhead.com/tbc/fr/item=30241,Jeton d'armure,BP2,""Hunter/Mage/
-Warlock"",,Chasseur/Mage > Lock,""Hunt BP2, Mage BP2
-T5- Hunter, Mage, Warlock""
-Fathom-Lord Karathress,Gilet de brigand de la Mer de sang,https://www.wowhead.com/tbc/fr/item=30101,Torse - Cuir,BP2,Physical DPS/ Bear,Physical DPS/ Tank,""Cat/Amélio > Bear > 
-PRet/Rogue/Fury/Arms > Chasseur"",""Cat BP2, Enh BP2""
-Fathom-Lord Karathress,Brasse-broche du marcheur-des-flots,https://www.wowhead.com/tbc/fr/item=30663,Bijou - Sham,,RSha/Ele,Enh Shaman,Rcham > Elem > Amélio,""45s Hidden Cooldown 
-- Approx 30-40mp5""
-Fathom-Lord Karathress,Licol effiloché du noyé,https://www.wowhead.com/tbc/fr/item=30099,Cou - Collier,BP2,Tank,Melee,Bear/PWar > PPal,""Bear BP2, PWar BP2""
-Fathom-Lord Karathress,Sextant des courants instables,https://www.wowhead.com/tbc/fr/item=30626,Bijou,BP2,Caster DPS,Heal,""Elem/Lock > 
-Boomy/SP/Mage"",""Ele BP2, Boom BP2 (P1 Prio), 
-Shadow BP2 (P1 Prio), 
-Mage BP2 (P1 Prio), Lock BP2""
-Fathom-Lord Karathress,Bottes de marcheur des âmes,https://www.wowhead.com/tbc/fr/item=30100,Pieds - Tissu,BP3,Heal/Mage,Caster DPS,""HPri > RDru > Mage > 
-Rcham > HPal"",""HPri BP3, RDru BP2""
 Fathom-Lord Karathress,Briseur de monde,https://www.wowhead.com/tbc/fr/item=30090,Arme 2M - Masse,,Melee,Tank,PRet/Arms > Amélio > Feral,
-Fathom-Lord Karathress,Leggings of the Vanquished Champion,,Jeton d'armure,BP2,""Paladin/Rogue/
-Shaman"",,""PPal > HPal/Rcham > 
-PRet/Elem/Rogue > Amélio"",""PPal BP2
-T5- Paladin, Rogue, Shaman""
-Fathom-Lord Karathress,Leggings of the Vanquished Defender,,Jeton d'armure,BP2,""Druid/Priest/
-Warrior"",,""Bear/PWar > 
-RDruHPri > Boomy > 
-Cat/SP/Fury/Arms"",""RDru BP2, Bear BP2, Boom BP2, 
-HPri BP2, PWar BP2
-T5- Druid, Priest, Warrior""
-Fathom-Lord Karathress,Leggings of the Vanquished Hero,,Jeton d'armure,BP2,""Hunter/Mage/
-Warlock"",,Mage/Lock > Chasseur,""Mage BP2, Lock BP2
-T5- Hunter, Mage, Warlock""
-Morogrim Tidewalker,Bague du vigilant,https://www.wowhead.com/tbc/fr/item=33058,Doigt - Anneau,,Holy Paladin,Caster DPS/ Heal/Paladin,""Holy Paladin > Paladin >
-Healers > Caster DPS"",
 Morogrim Tidewalker,Ceinturon de l'appel du jusant,https://www.wowhead.com/tbc/fr/item=30068,Taille - Mailles,,Physical DPS,Tank,PRet/Amélio > Chasseur/Fury/Arms,
 Morogrim Tidewalker,Plastron des anciens déformé,https://www.wowhead.com/tbc/fr/item=30075,Torse - Cuir,,Heal,Caster DPS,RDru > HPal > Rcham,
 Morogrim Tidewalker,Protège-épaules illidari,https://www.wowhead.com/tbc/fr/item=30079,Épaules - Tissu,,Caster DPS,Heal,Boomy/Mage/SP > Elem/Lock,
 Morogrim Tidewalker,Bâtonnet luminescent des Naaru,https://www.wowhead.com/tbc/fr/item=30080,Baguette,BP5,HPri/Mage,Caster DPS/ Heal,HPri > Mage > SP/Lock,HPri BP5
 Morogrim Tidewalker,Mantelet du pisteur infatigable,https://www.wowhead.com/tbc/fr/item=30085,Épaules - Mailles,,Physical DPS,Tank,Chasseur/Amélio > Fury/Arms > PRet,
 Morogrim Tidewalker,Espauliers de la sentinelle d'argent,https://www.wowhead.com/tbc/fr/item=30084,Épaules - Plaques,,Holy Paladin,Paladin,Holy Paladin,
-Morogrim Tidewalker,Pendentif des âges perdus,https://www.wowhead.com/tbc/fr/item=30008,Cou - Collier,,""Caster DPS/
-Prot Paladin"",ALL,Caster DPS/PPal > Rest,Reduces Duration of Silence/Interrupts
 Morogrim Tidewalker,Cape de bataille en écailles-rasoirs,https://www.wowhead.com/tbc/fr/item=30098,Dos,,Physical DPS/ Bear,Physical DPS/ Tank,Cat/PRet/Amélio/Fury/Arms > Bear > Rogue > Chasseur,
-Morogrim Tidewalker,Anneau des âmes scindées,https://www.wowhead.com/tbc/fr/item=30083,Doigt - Anneau,BP5,Tank,Melee,Bear/PPal > PWar,""Bear BP5, PPal BP5 (PWar Rep Prio)""
 Morogrim Tidewalker,Tresse de l'anneau du serpent,https://www.wowhead.com/tbc/fr/item=30720,Bijou - Mage,BP5,Mage,,,Mage BP5
-Morogrim Tidewalker,Serre d'Azshara,https://www.wowhead.com/tbc/fr/item=30082,Arme 1M - Épée,BP5,Physical DPS,Tank,""Sword Rogue > Rogue > 
-Fury > Chasseur"",Rog BP5 (Off Hand)
 Morogrim Tidewalker,Bottes de guerre d'oblitération,https://www.wowhead.com/tbc/fr/item=30081,Pieds - Plaques,,Warrior/Ret,Warrior/Paladin,PWar > Fury/Arms > PRet,
-Dame Vashj,Ceinture des cent façons de mourir,https://www.wowhead.com/tbc/fr/item=30106,Taille - Cuir,BP5,Physical DPS/ Tank,Physical DPS/ Tank,""Bear > PWar > 
-Cat/Rogue/Amélio/Fury/Arms >
-PRet > Chasseur"",""Bear BP5, Cat BP5, Rog BP5, 
-Enh BP5, Fury/Arms BP5, Hunt BP2, 
-Ret BP5, PWar BP2""
-Dame Vashj,Bottes fouette-cobra,https://www.wowhead.com/tbc/fr/item=30104,Pieds - Mailles,BP2,Physical DPS,Tank,Chasseur/Amélio/Fury/Arms > PRet,""Hunt BP2, Enh BP2, Fury/Arms BP2,
-Ret BP2 (P1 Prio)""
 Dame Vashj,Bague de corail du ranimé,https://www.wowhead.com/tbc/fr/item=30110,Doigt - Anneau,BP2,Heal,Caster DPS,HPri > RDru/RPal/Rcham,HPri BP2
 Dame Vashj,Croc de Vashj,https://www.wowhead.com/tbc/fr/item=30103,Arme 1M - Dague,BP5,Physical DPS/ PWar,Physical DPS/ Tank,Dag Rogue > Rogue > PWar > Fury/Amélio > Chasseur,Rog BP5
 Dame Vashj,Gantelets glorieux de découragement,https://www.wowhead.com/tbc/fr/item=30112,Mains - Plaques,BP5,Holy Paladin,Paladin,Holy Paladin,HPal BP5
 Dame Vashj,Cuirasse cœur-de-kraken,https://www.wowhead.com/tbc/fr/item=30102,Torse - Plaques,,Warrior/Ret,Warrior/Paladin,PWar > Fury/Arms > PRet,
-Dame Vashj,Sceptre Sondelumière,https://www.wowhead.com/tbc/fr/item=30108,Arme 1M - Masse,BP5,Heal,Caster DPS,HPal/Rcham > RDru/HPri,""HPal BP5, RSha BP5, 
-RDru BP2, HPri BP2""
 Dame Vashj,Prisme du calme intérieur,https://www.wowhead.com/tbc/fr/item=30621,Bijou,,ALL DPS,Heal,PRet > Amélio > Elem/Boomy > Fury/Arms > Lock > Mage/SP > Chasseur/Rogue,Threat Reduced by 150 off crits
-Dame Vashj,Anneau des ondulations infinies,https://www.wowhead.com/tbc/fr/item=30109,Doigt - Anneau,BP2,Caster DPS,Heal,Boomy/Elem/SP/Lock > Mage,""Boom BP2, Ele BP2, Shadow BP2,
-Lock BP2""
 Dame Vashj,Mantelet du totem runique,https://www.wowhead.com/tbc/fr/item=30111,Épaules - Cuir,,Heal,Caster DPS,RDru > Rcham > HPal,
-Dame Vashj,Arc long en échine de serpent,https://www.wowhead.com/tbc/fr/item=30105,Arc,BP2,Physical DPS/ Tank,Physical DPS/ Tank,Chasseur > PWar > Fury/Arms > Rogue,""Hunt BP2, Fury/Arms BP2, 
-PWar BP2""
-Dame Vashj,Habit de la sorcière des mers,https://www.wowhead.com/tbc/fr/item=30107,Torse - Tissu,BP5,Caster DPS,Heal,Lock > Boomy/Mage/SP > Elem,""Lock BP5, Boom BP2, Mage BP2, Shadow BP2""
 Dame Vashj,Reste de la fiole de Vashj,https://www.wowhead.com/tbc/fr/item=29906,Quête,,ALL,ALL,,
-Dame Vashj,Heaume du champion vaincu,https://www.wowhead.com/tbc/fr/item=30242,Jeton d'armure,BP5,""Paladin/Rogue/
-Shaman"",,""PPal > HPal > 
-PRet/Elem/Rogue/Amélio > Rcham"",""PPal BP5, HPal BP2, Ret BP2,
-Ele BP2, Rog BP2, Enh BP2, RSha BP2
-T5- Paladin, Rogue, Shaman""
-Dame Vashj,Heaume du défenseur vaincu,https://www.wowhead.com/tbc/fr/item=30243,Jeton d'armure,BP5,""Druid/Priest/
-Warrior"",,""Bear > RDru/HPri/PWar > 
-Cat/Fury/Arms > 
-Boomy/SP"",""Bear BP5, RDru BP2, Cat BP2,
-HPri BP2, Fury/Arms BP2, PWar BP2
-T5- Druid, Priest, Warrior""
-Dame Vashj,Heaume du héros vaincu,https://www.wowhead.com/tbc/fr/item=30244,Jeton d'armure,BP2,""Hunter/Mage/
-Warlock"",,Chasseur/Mage > Lock,""Hunt BP2, Mage BP2
-T5- Hunter, Mage, Warlock""
 Trash,Bottes du courage sans fin,https://www.wowhead.com/tbc/fr/item=30027,Pieds - Plaques,,Holy Paladin,Paladin,Holy Paladin,
-Trash,Pendentif périlleux,https://www.wowhead.com/tbc/fr/item=30022,Cou - Collier,BP2,Melee,Physical DPS/ Tank,""Cat/Amélio/Fury/Arms > PRet > 
-Bear > PWar > PPal"",""Cat BP2, Fury/Arms BP2""
-Trash,Shuriken du sanctuaire du Serpent,https://www.wowhead.com/tbc/fr/item=30025,Arme de jet,BP2,Rogue/Warrior,Physical DPS/ Tank,PWar > Rogue > Fury/Arms,""Rog BP2, Fury/Arms/PWar = 
-#2 P2 Under Hunter Top""
-Trash,Longue-vue de la flotte cachée,https://www.wowhead.com/tbc/fr/item=30620,Bijou,BP5,Tank,ALL,Bear/PPal > PWar > All,""Bear BP5, PPal BP5, Affected by 
-+Healing, HoT, Used Shapeshifted
-PvP for all, Still good in Wrath""
 Trash,Totem du maelström,https://www.wowhead.com/tbc/fr/item=30023,Relique - Shaman,BP2,Resto Shaman,Shaman,Rcham > Elem/Amélio,RSha BP2
-Trash,Grand bâton de furie-du-fauve,https://www.wowhead.com/tbc/fr/item=30021,Arme 2M - Bâton,BP5,Feral,Druid,Bear > Cat > Rcham/Boomy,""Bear BP5, Cat BP2""
