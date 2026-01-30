@@ -2,21 +2,17 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>TBC BIS Loots - Multi-raids</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TBC BIS Loots</title>
     <link rel="stylesheet" href="assets/style.css" />
 
-    <script>
-      // Wowhead tooltips
-      var whTooltips = {
-        colorLinks: true,
-        iconizeLinks: true,
-        renameLinks: false,
-        locale: "fr_FR"
-      };
-    </script>
+    <script src="js/tooltip.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/dataLoader.js"></script>
+    <script src="js/tableRenderer.js"></script>
     <script src="https://wow.zamimg.com/widgets/power.js"></script>
   </head>
+
   <body>
     <div id="app">
       <div class="credits-container">
@@ -33,7 +29,7 @@
         </div>
       </div>
       <div class="wide-row">
-        <h1>TBC – BIS Loots by MEUPORG</h1>
+        <h1>TBC – BIS Loots</h1>
         <p class="subtitle">
           Choisissez un raid, un boss, une classe et/ou un rôle pour afficher les loots. Survolez le nom pour voir le
           tooltip Wowhead.
@@ -41,20 +37,51 @@
 
         <div id="filtersBar" class="filters-bar">
           <div class="controls">
-            <!-- Raid -->
             <div class="controls selector-block">
               <label for="raidSelect">Raid :</label>
               <select id="raidSelect"></select>
             </div>
 
-            <!-- Boss -->
             <div class="controls selector-block">
               <label for="bossSelect">Boss :</label>
               <select id="bossSelect">
                 <option value="">Tous les boss</option>
               </select>
             </div>
-            <!-- BIS -->
+
+            <div class="controls selector-block">
+              <label for="slotSelect">Emplacement :</label>
+              <select id="slotSelect">
+                <option value="">Tous</option>
+              </select>
+            </div>
+
+            <div class="controls selector-block">
+              <label for="classSelect">Classe :</label>
+              <select id="classSelect">
+                <option value="">Toutes</option>
+                <option value="Paladin">Paladin</option>
+                <option value="Guerrier">Guerrier</option>
+                <option value="Druide">Druide</option>
+                <option value="Chaman">Chaman</option>
+                <option value="Prêtre">Prêtre</option>
+                <option value="Voleur">Voleur</option>
+                <option value="Chasseur">Chasseur</option>
+                <option value="Mage">Mage</option>
+                <option value="Démoniste">Démoniste</option>
+              </select>
+            </div>
+
+            <div class="controls selector-block">
+              <label for="roleSelect">Rôle :</label>
+              <select id="roleSelect">
+                <option value="">Tous</option>
+                <option value="Tank">Tank</option>
+                <option value="Heal">Heal</option>
+                <option value="DPS">DPS</option>
+              </select>
+            </div>
+
             <div class="controls selector-block">
               <label for="bisFilter">BIS :</label>
               <select id="bisFilter">
@@ -66,569 +93,78 @@
                 <option value="BP5">BP5</option>
               </select>
             </div>
-            <!-- Classe -->
-            <div class="controls selector-block">
-              <label for="classFilter">Classe :</label>
-              <select id="classFilter">
-                <option value="">Toutes</option>
-                <option value="Paladin">Paladin</option>
-                <option value="Guerrier">Guerrier</option>
-                <option value="Druide">Druide</option>
-                <option value="Chaman">Chaman</option>
-                <option value="Prêtre">Prêtre</option>
-                <option value="Voleur">Voleur</option>
-                <option value="Chasseur">Chasseur</option>
-                <option value="Démoniste">Démoniste</option>
-                <option value="Mage">Mage</option>
-              </select>
-            </div>
-            <!-- Rôle -->
-            <div class="controls selector-block">
-              <label for="roleFilter">Rôle :</label>
-              <select id="roleFilter">
-                <option value="">Tous</option>
-                <option value="Tank">Tank</option>
-                <option value="Heal">Heal</option>
-                <option value="DPS">DPS</option>
-              </select>
-            </div>
           </div>
         </div>
+
         <table>
           <thead>
             <tr>
-              <th class="loot-col">Loot</th>
-              <th class="type-col">Type</th>
-              <th>BIS</th>
+              <th>Loot</th>
+              <th>Emplacement</th>
+              <th>Type</th>
               <th>Spé 1</th>
               <th>Spé 2</th>
               <th>Priorité</th>
-              <th class="notes-col">Notes</th>
+              <th>BIS</th>
+              <th>Token</th>
+              <th>Notes</th>
             </tr>
           </thead>
-          <tbody id="lootBody">
-            <!-- Rempli dynamiquement -->
-          </tbody>
+          <tbody id="lootBody"></tbody>
         </table>
       </div>
     </div>
+
     <script>
-      // === Config des raids (chemins CSV) ===============================
-      const RAIDS = [
-        { id: "karazhan", name: "[P1] Karazhan", csv: "CSV/karazhan.csv" },
-        {
-          id: "mags_gruul_worldboss",
-          name: "[P1] Magtheridon / Gruul / World Boss",
-          csv: "CSV/mags_gruul_worldboss.csv"
-        },
-        { id: "ssc", name: "[P2] Caverne du sanctuaire du Serpent", csv: "CSV/ssc.csv" },
-        { id: "tk", name: "[P2] Donjon de la Tempête (The Eye)", csv: "CSV/tk.csv" },
-        { id: "hyjal", name: "[P3] Sommet d’Hyjal", csv: "CSV/hyjal.csv" },
-        { id: "bt", name: "[P3] Temple noir (BT)", csv: "CSV/bt.csv" },
-        { id: "za", name: "[P4] Zul’Aman", csv: "CSV/za.csv" },
-        { id: "swp", name: "[P5] Plateau du Puits de soleil (SWP)", csv: "CSV/swp.csv" },
-        { id: "t4", name: "[P1] Set T4", csv: "CSV/t4.csv" },
-        { id: "t5", name: "[P2] Set T5", csv: "CSV/t5.csv" },
-        { id: "t6", name: "[P3] Set T6", csv: "CSV/t6.csv" }
-      ];
-
-      // === Mapping classes -> couleurs ===============================
-      const wowClassMap = {
-        "Holy Paladin": "wow-paladin",
-        "Resto Shaman": "wow-shaman",
-        "Resto Druid": "wow-druid",
-        "Prot Paladin": "wow-paladin",
-        "Prot Warrior": "wow-warrior",
-        "War Fury": "wow-warrior",
-        "War Armes": "wow-warrior",
-        "War Tank": "wow-warrior",
-
-        Druide: "wow-druid",
-        Druid: "wow-druid",
-        RDru: "wow-druid",
-        Feral: "wow-druid",
-        Bear: "wow-druid",
-        Cat: "wow-druid",
-        Boom: "wow-druid",
-        Boomy: "wow-druid",
-
-        Hunt: "wow-hunter",
-        Chasseur: "wow-hunter",
-        Hunter: "wow-hunter",
-        Chassou: "wow-hunter",
-        SurvHunt: "wow-hunter",
-
-        Mage: "wow-mage",
-
-        Paladin: "wow-paladin",
-        HPal: "wow-paladin",
-        PPal: "wow-paladin",
-        Ret: "wow-paladin",
-        PRet: "wow-paladin",
-        RPal: "wow-paladin",
-
-        Priest: "wow-priest",
-        HPri: "wow-priest",
-        Shadow: "wow-priest",
-        SP: "wow-priest",
-
-        Rog: "wow-rogue",
-        Rogue: "wow-rogue",
-
-        Shaman: "wow-shaman",
-        Sha: "wow-shaman",
-        RSha: "wow-shaman",
-        RSh: "wow-shaman",
-        Rcham: "wow-shaman",
-        Ele: "wow-shaman",
-        Elem: "wow-shaman",
-        Enh: "wow-shaman",
-        Amélio: "wow-shaman",
-        chaman: "wow-shaman",
-        Chaman: "wow-shaman",
-
-        Lock: "wow-warlock",
-        Warlock: "wow-warlock",
-        démo: "wow-warlock",
-
-        Warrior: "wow-warrior",
-        PWar: "wow-warrior",
-        Fury: "wow-warrior",
-        Arms: "wow-warrior"
-      };
-
-      // Clés triées par longueur pour éviter que "Paladin" matche avant "Holy Paladin"
-      const CLASS_KEYS = Object.keys(wowClassMap).sort((a, b) => b.length - a.length);
-
-      // === Détection Classe / Rôle pour le filtrage ===================
-
-      // Classe -> tokens à chercher dans PRIORITY
-      const CLASS_FILTERS = {
-        Paladin: ["paladin", "hpal", "ppal", "pret", "rpal"],
-        Guerrier: ["warrior", "pwar", "fury", "arms", "war tank"],
-        Druide: ["druide", "druid", "rdru", "feral", "bear", "cat", "boomy", "boom"],
-        Chaman: ["chaman", "sha", "rcham", "rsha", "elem", "elemental", "amélio", "enh"],
-        Prêtre: ["priest", "hpri", "shadow", "sp"],
-        Voleur: ["rogue", "rog"],
-        Chasseur: ["chasseur", "hunt", "bmhunt", "survhunt", "chassou"],
-        Démoniste: ["démo", "warlock", "lock"],
-        Mage: ["mage"]
-      };
-
-      // Rôle -> tokens à chercher dans PRIORITY
-      const ROLE_FILTERS = {
-        Tank: ["tank", "prot warrior", "prot paladin", "pwar", "ppal", "bear", "war tank", "feral tank"],
-        Heal: ["heal", "holy paladin", "hpal", "hpri", "resto druid", "rdru", "resto shaman", "rcham", "rsha", "rsh"],
-        DPS: [
-          "dps",
-          "boomy",
-          "boom",
-          "elem",
-          "elemental",
-          "sp",
-          "rogue",
-          "rog",
-          "chasseur",
-          "hunt",
-          "bmhunt",
-          "survhunt",
-          "fury",
-          "arms",
-          "pret",
-          "feral",
-          "cat",
-          "démo",
-          "warlock",
-          "lock",
-          "mage"
-        ]
-      };
-
-      // Combos classe + rôle pour un match plus strict
-      const CLASS_ROLE_COMBOS = {
-        "Paladin:Tank": ["ppal", "prot paladin", "paladin prot"],
-        "Paladin:Heal": ["hpal", "holy paladin"],
-        "Paladin:DPS": ["pret"],
-
-        "Guerrier:Tank": ["pwar", "prot warrior", "war tank"],
-        "Guerrier:DPS": ["fury", "arms"],
-
-        "Druide:Tank": ["bear", "feral tank"],
-        "Druide:Heal": ["rdru", "resto druid"],
-        "Druide:DPS": ["boomy", "feral", "cat"],
-
-        "Chaman:Heal": ["rcham", "resto shaman"],
-        "Chaman:DPS": ["amélio", "elem"],
-
-        "Prêtre:Heal": ["hpri"],
-        "Prêtre:DPS": ["sp"],
-
-        "Chasseur:DPS": ["chasseur", "bmhunt", "survhunt"],
-
-        "Voleur:DPS": ["rogue", "rog"],
-        "Démoniste:DPS": ["démo"],
-        "Mage:DPS": ["mage"]
-      };
-
-      // Retourne les sets {classes, roles} détectés pour une ligne (SUR PRIORITY UNIQUEMENT)
-      function getRowMeta(row) {
-        const txt = (row.priority || "").toLowerCase();
-
-        const classes = new Set();
-        const roles = new Set();
-
-        for (const [cls, tokens] of Object.entries(CLASS_FILTERS)) {
-          if (tokens.some((t) => txt.includes(t))) {
-            classes.add(cls);
-          }
-        }
-
-        for (const [role, tokens] of Object.entries(ROLE_FILTERS)) {
-          if (tokens.some((t) => txt.includes(t))) {
-            roles.add(role);
-          }
-        }
-
-        return { classes, roles };
-      }
-
-      // Vérifie si un couple (classe, rôle) est bien présent dans PRIORITY
-      function classRoleMatchesRow(row, classFilter, roleFilter) {
-        if (!classFilter || !roleFilter) return true;
-
-        const key = classFilter + ":" + roleFilter;
-        const combos = CLASS_ROLE_COMBOS[key];
-        if (!combos || !combos.length) return true;
-
-        const txt = (row.priority || "").toLowerCase();
-        return combos.some((token) => txt.includes(token.toLowerCase()));
-      }
-
-      // === CSV parser maison (gère les quotes, virgules, retours) =====
-      function parseCSV(text) {
-        const rows = [];
-        let field = "";
-        let row = [];
-        let inQuotes = false;
-
-        for (let i = 0; i < text.length; i++) {
-          const c = text[i];
-
-          if (c === '"') {
-            if (inQuotes && text[i + 1] === '"') {
-              field += '"';
-              i++;
-            } else {
-              inQuotes = !inQuotes;
-            }
-          } else if (c === "," && !inQuotes) {
-            row.push(field);
-            field = "";
-          } else if ((c === "\n" || c === "\r") && !inQuotes) {
-            if (field.length > 0 || row.length > 0) {
-              row.push(field);
-              rows.push(row);
-            }
-            field = "";
-            row = [];
-            if (c === "\r" && text[i + 1] === "\n") {
-              i++;
-            }
-          } else {
-            field += c;
-          }
-        }
-
-        if (field.length > 0 || row.length > 0) {
-          row.push(field);
-          rows.push(row);
-        }
-
-        return rows;
-      }
-
-      // Transforme en objets avec noms de colonnes en minuscule
-      function csvToObjects(text) {
-        const rows = parseCSV(text);
-        if (!rows.length) return [];
-        const headers = rows[0].map((h) => h.trim().toLowerCase());
-        const data = [];
-
-        for (let i = 1; i < rows.length; i++) {
-          const row = rows[i];
-          if (row.every((v) => !v || v.trim() === "")) continue;
-          const obj = {};
-          headers.forEach((h, idx) => {
-            obj[h] = row[idx] !== undefined ? row[idx] : "";
-          });
-          data.push(obj);
-        }
-        return data;
-      }
-
-      // Helpers texte
-      function escapeHTML(str) {
-        return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-      }
-      function formatCellText(value) {
-        if (!value) return "";
-        return escapeHTML(value).replace(/\n/g, "<br>");
-      }
-
-      // Données courantes
-      let currentRaidId = null;
-      let currentData = [];
-
-      // Chargement d'un raid
-      async function loadRaid(raidId) {
-        const raid = RAIDS.find((r) => r.id === raidId);
-        if (!raid) return;
-
-        currentRaidId = raidId;
-        const res = await fetch(raid.csv);
-        const text = await res.text();
-        currentData = csvToObjects(text);
-
-        populateBossSelect();
-        renderTable();
-      }
-
-      // Remplir le select des boss
-      function populateBossSelect() {
-        const bossSelect = document.getElementById("bossSelect");
-        bossSelect.innerHTML = "";
-
-        const optAll = document.createElement("option");
-        optAll.value = "";
-        optAll.textContent = "Tous les boss";
-        bossSelect.appendChild(optAll);
-
-        const bosses = [];
-        currentData.forEach((row) => {
-          const b = (row.boss || "").trim();
-          if (b && !bosses.includes(b)) bosses.push(b);
-        });
-
-        bosses.forEach((bossName) => {
-          const opt = document.createElement("option");
-          opt.value = bossName;
-          opt.textContent = bossName;
-          bossSelect.appendChild(opt);
-        });
-      }
-
-      // Rendu du tableau (boss + BIS + classe + rôle)
-      function renderTable() {
-        const tbody = document.getElementById("lootBody");
-        const bossFilter = document.getElementById("bossSelect").value;
-        const bisFilterEl = document.getElementById("bisFilter");
-        const bisFilter = bisFilterEl ? bisFilterEl.value : "";
-        const classFilter = document.getElementById("classFilter").value;
-        const roleFilter = document.getElementById("roleFilter").value;
-
-        tbody.innerHTML = "";
-
-        const filtered = currentData.filter((row) => {
-          // Boss
-          if (bossFilter && (row.boss || "").trim() !== bossFilter) {
-            return false;
-          }
-
-          // BIS
-          if (bisFilter) {
-            const rowBis = (row.bis || "").trim();
-            if (rowBis !== bisFilter) return false;
-          }
-
-          // Métadonnées (PRIORITY ONLY)
-          const { classes, roles } = getRowMeta(row);
-
-          // Classe seule
-          if (classFilter && !classes.has(classFilter)) {
-            return false;
-          }
-
-          // Rôle seul
-          if (roleFilter && !roles.has(roleFilter)) {
-            return false;
-          }
-
-          // Combo classe + rôle : check plus strict
-          if (classFilter && roleFilter) {
-            if (!classRoleMatchesRow(row, classFilter, roleFilter)) {
-              return false;
-            }
-          }
-
-          return true;
-        });
-
-        let lastBoss = null;
-
-        filtered.forEach((row) => {
-          const bossName = (row.boss || "").trim();
-
-          if (bossName && bossName !== lastBoss) {
-            const trBoss = document.createElement("tr");
-            trBoss.className = "boss-title";
-            const td = document.createElement("td");
-            td.colSpan = 7;
-            td.textContent = bossName;
-            trBoss.appendChild(td);
-            tbody.appendChild(trBoss);
-            lastBoss = bossName;
-          }
-
-          const tr = document.createElement("tr");
-
-          const tdLoot = document.createElement("td");
-          const lootName = row.loot_name || "";
-          const lootUrl = row.loot_url || "";
-          if (lootUrl) {
-            tdLoot.innerHTML = '<a href="' + escapeHTML(lootUrl) + '">' + escapeHTML(lootName) + "</a>";
-          } else {
-            tdLoot.textContent = lootName;
-          }
-
-          const tdType = document.createElement("td");
-          tdType.innerHTML = formatCellText(row.type || "");
-
-          const tdBis = document.createElement("td");
-          const bisText = (row.bis || "").trim();
-          tdBis.textContent = bisText;
-
-          const tdSpec1 = document.createElement("td");
-          tdSpec1.innerHTML = formatCellText(row.spec1 || "");
-
-          const tdSpec2 = document.createElement("td");
-          tdSpec2.innerHTML = formatCellText(row.spec2 || "");
-
-          const tdPrio = document.createElement("td");
-          tdPrio.innerHTML = formatCellText(row.priority || "");
-
-          const tdNotes = document.createElement("td");
-          tdNotes.innerHTML = formatCellText(row.notes || "");
-
-          tr.appendChild(tdLoot);
-          tr.appendChild(tdType);
-          tr.appendChild(tdBis);
-          tr.appendChild(tdSpec1);
-          tr.appendChild(tdSpec2);
-          tr.appendChild(tdPrio);
-          tr.appendChild(tdNotes);
-
-          tbody.appendChild(tr);
-        });
-
-        applyBisRarity();
-        applyClassColors();
-
-        if (typeof $WowheadPower !== "undefined" && typeof $WowheadPower.refreshLinks === "function") {
-          $WowheadPower.refreshLinks();
-        }
-      }
-
-      // Couleurs de rareté BIS
-      function applyBisRarity() {
-        const rows = document.querySelectorAll("#lootBody tr");
-        rows.forEach((row) => {
-          const cells = row.querySelectorAll("td");
-          if (cells.length < 3) return;
-          const bisCell = cells[2];
-          const text = bisCell.textContent.trim();
-
-          let rarityClass = null;
-          if (text === "BP1") {
-            rarityClass = "rarity-common";
-          } else if (text === "BP2") {
-            rarityClass = "rarity-uncommon";
-          } else if (text === "BP3") {
-            rarityClass = "rarity-rare";
-          } else if (text === "BP4") {
-            rarityClass = "rarity-epic";
-          } else if (text === "BP5") {
-            rarityClass = "rarity-legendary";
-          }
-
-          if (rarityClass) {
-            bisCell.classList.add("rarity-bp", rarityClass);
-          }
-        });
-      }
-
-      // Couleurs de classes dans la colonne Priorité
-      function applyClassColors() {
-        const rows = document.querySelectorAll("#lootBody tr");
-        rows.forEach((row) => {
-          const cells = row.querySelectorAll("td");
-          if (cells.length < 6) return;
-
-          const prioCell = cells[5];
-          let html = prioCell.innerHTML;
-
-          CLASS_KEYS.forEach((key) => {
-            const cssClass = wowClassMap[key];
-            const re = new RegExp("\\b" + key.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&") + "\\b", "g");
-            html = html.replace(re, '<span class="' + cssClass + '">' + key + "</span>");
-          });
-
-          prioCell.innerHTML = html;
-        });
-      }
-
-      // Initialisation
-      document.addEventListener("DOMContentLoaded", () => {
+      document.addEventListener("DOMContentLoaded", async () => {
         const raidSelect = document.getElementById("raidSelect");
         const bossSelect = document.getElementById("bossSelect");
-        const classSelect = document.getElementById("classFilter");
-        const roleSelect = document.getElementById("roleFilter");
-        const bisSelect = document.getElementById("bisFilter");
-        const filtersBar = document.getElementById("filtersBar");
+        const bisFilter = document.getElementById("bisFilter");
+        const slotSelect = document.getElementById("slotSelect");
+        const classSelect = document.getElementById("classSelect");
+        const roleSelect = document.getElementById("roleSelect");
 
-        // Remplir le select des raids
-        RAIDS.forEach((raid) => {
+        // Remplissage du select Raid
+        RAID_GROUPS.forEach((g) => {
           const opt = document.createElement("option");
-          opt.value = raid.id;
-          opt.textContent = raid.name;
+          opt.value = g.id;
+          opt.textContent = g.label;
           raidSelect.appendChild(opt);
         });
 
-        const defaultRaid = RAIDS[0]?.id || "";
-        if (defaultRaid) {
-          raidSelect.value = defaultRaid;
-          loadRaid(defaultRaid);
-        }
+        // Chargement des données
+        await loadData();
+        loadRaid(RAID_GROUPS[0].id);
 
+        // Changement de raid
         raidSelect.addEventListener("change", () => {
-          const id = raidSelect.value;
-          if (id) loadRaid(id);
+          loadRaid(raidSelect.value);
         });
 
-        bossSelect.addEventListener("change", renderTable);
-        classSelect.addEventListener("change", renderTable);
-        roleSelect.addEventListener("change", renderTable);
-        bisSelect.addEventListener("change", renderTable);
-
-        // --- Sticky background trigger via scroll ---
-        let stickyOffset = filtersBar.offsetTop;
-
-        function handleSticky() {
-          if (window.scrollY > stickyOffset) {
-            filtersBar.classList.add("sticky-active");
-          } else {
-            filtersBar.classList.remove("sticky-active");
-          }
-        }
-
-        window.addEventListener("scroll", handleSticky);
-        window.addEventListener("resize", () => {
-          // si le layout bouge (resize), on recalcule la position de référence
-          stickyOffset = filtersBar.offsetTop;
-          handleSticky();
+        // 🔥 Filtres DOM-dépendants (Boss / BIS)
+        slotSelect.addEventListener("change", () => {
+          requestAnimationFrame(renderTable);
         });
 
-        // appel initial (au cas où on arrive déjà scrollé)
-        handleSticky();
+        classSelect.addEventListener("change", () => {
+          requestAnimationFrame(renderTable);
+        });
+
+        roleSelect.addEventListener("change", () => {
+          requestAnimationFrame(renderTable);
+        });
+
+        bossSelect.addEventListener("change", () => {
+          requestAnimationFrame(() => {
+            renderTable();
+          });
+        });
+
+        bisFilter.addEventListener("change", () => {
+          requestAnimationFrame(() => {
+            renderTable();
+          });
+        });
       });
     </script>
   </body>
