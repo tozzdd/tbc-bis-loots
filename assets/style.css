@@ -173,6 +173,18 @@ label[for="roleFilter"] {
 
 /* Icône item Wowhead plus grande dans la 1ère colonne */
 #lootBody td:first-child a.icontinyl {
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px !important;
+    padding-left: 30px !important;
+    min-height: 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+a.wow-item {
+    background-repeat: no-repeat;
+    background-position: left center;
     background-size: 20px 20px !important;
     padding-left: 30px !important;
     min-height: 20px;

@@ -1,8 +1,3 @@
-function getSpec(item, index) {
-  if (!Array.isArray(item.spécialisations)) return "";
-  return item.spécialisations[index] || "";
-}
-
 function getPriority(item) {
   if (!Array.isArray(item.priorité)) return "";
   return item.priorité.join(", ");
@@ -88,9 +83,9 @@ function getBisClass(bis) {
 
 function renderTable() {
   const tbody = document.getElementById("lootBody");
-  const { boss, bis, slot, selectedClass, selectedRole } = getActiveFilters();
+  const { boss, bis, slot, selectedClass, selectedRole } = filterState;
 
-  tbody.innerHTML = "";
+  let html = "";
   let lastBoss = null;
 
   currentData
@@ -102,23 +97,25 @@ function renderTable() {
       if (!itemMatchesRole(item, selectedRole)) return false;
       return true;
     })
-
     .forEach((i) => {
+      const specsMS = i.specialisations_ms || [];
+      const specsOS = i.specialisations_os || [];
+
       if (i.boss && i.boss !== lastBoss) {
-        tbody.innerHTML += `
+        html += `
           <tr class="boss-title">
             <td colspan="9">${i.boss}</td>
           </tr>`;
         lastBoss = i.boss;
       }
 
-      tbody.innerHTML += `
+      html += `
         <tr>
           <td>${wowhead(i.id, i.nom)}</td>
           <td>${i.emplacement || ""}</td>
           <td>${i.matière || ""}</td>
-          <td>${getSpec(i, 0)}</td>
-          <td>${getSpec(i, 1)}</td>
+          <td class="spec-ms">${specsMS.length ? specsMS.join(", ") : "-"}</td>
+          <td class="spec-os">${specsOS.length ? specsOS.join(", ") : "-"}</td>
           <td>${renderPriorityCell(i.priorité)}</td>
           <td class="${getBisClass(i.bis)}">${i.bis || ""}</td>
           <td>${i.tokenId ? wowhead(i.tokenId, i.token) : ""}</td>
@@ -126,5 +123,9 @@ function renderTable() {
         </tr>`;
     });
 
+  // 🔥 DOM touché UNE SEULE FOIS
+  tbody.innerHTML = html;
+
+  // 🔥 Wowhead UNE SEULE FOIS sur DOM stable
   refreshTooltips();
 }

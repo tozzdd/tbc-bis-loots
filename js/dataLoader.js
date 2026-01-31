@@ -13,23 +13,56 @@ async function loadData() {
   ALL_DATA = await res.json();
 }
 
-/* Sélection d’un raid / groupe */
-function loadRaid(groupId) {
-  const group = RAID_GROUPS.find((g) => g.id === groupId);
-  if (!group) {
-    console.warn("Groupe introuvable :", groupId);
+function populateRaidSelect() {
+  const raidSelect = document.getElementById("raidSelect");
+  if (!raidSelect) {
+    console.warn("raidSelect introuvable");
     return;
   }
 
-  // 1️⃣ Données filtrées par raid
-  currentData = ALL_DATA.filter(group.filter);
+  raidSelect.innerHTML = "";
 
-  // 2️⃣ Reset des filtres UI dépendants du raid
-  resetFilters();
+  RAID_GROUPS.forEach((g) => {
+    const opt = document.createElement("option");
+    opt.value = g.id; // ID interne (ex: KARA, BT, SSC)
+    opt.textContent = g.label; // Label visible (ex: Karazhan)
+    raidSelect.appendChild(opt);
+  });
+}
 
-  // 3️⃣ Rebuild des selects dépendants des données
+/* Sélection d’un raid / groupe */
+function loadRaid(groupId) {
+  const group = RAID_GROUPS.find((g) => g.id === groupId);
+
+  if (!group) {
+    console.warn("Raid invalide :", groupId, "→ fallback");
+    loadRaid(RAID_GROUPS[0].id);
+    return;
+  }
+
+  if (groupId === "ALL") {
+    // 🔥 Respect de l’ordre du select RAID
+    currentData = [];
+
+    RAID_GROUPS.filter((g) => g.id !== "ALL").forEach((g) => {
+      currentData.push(...ALL_DATA.filter(g.filter));
+    });
+  } else {
+    currentData = ALL_DATA.filter(group.filter);
+  }
+
+  // 0️⃣ Mettre à jour l’état global + URL
+  filterState.raid = groupId;
+  updateURLFromFilters();
+
+  
+  // 2️⃣ Rebuild des selects dépendants du raid
+
   populateBossSelect();
   populateSlotSelect();
+
+  // 3️⃣ Réappliquer les filtres persistants à l’UI
+  applyFiltersToUI();
 
   // 4️⃣ Rendu final
   renderTable();

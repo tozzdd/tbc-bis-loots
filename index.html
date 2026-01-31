@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <title>TBC BIS Loots</title>
     <link rel="stylesheet" href="assets/style.css" />
-
     <script src="js/tooltip.js"></script>
     <script src="js/config.js"></script>
     <script src="js/filters.js"></script>
@@ -102,8 +101,8 @@
               <th>Loot</th>
               <th>Emplacement</th>
               <th>Type</th>
-              <th>Spé 1</th>
-              <th>Spé 2</th>
+              <th>MS</th>
+              <th>OS</th>
               <th>Priorité</th>
               <th>BIS</th>
               <th>Token</th>
@@ -117,54 +116,42 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", async () => {
-        const raidSelect = document.getElementById("raidSelect");
-        const bossSelect = document.getElementById("bossSelect");
-        const bisFilter = document.getElementById("bisFilter");
-        const slotSelect = document.getElementById("slotSelect");
-        const classSelect = document.getElementById("classSelect");
-        const roleSelect = document.getElementById("roleSelect");
+        loadFiltersFromURL();
 
-        // Remplissage du select Raid
-        RAID_GROUPS.forEach((g) => {
-          const opt = document.createElement("option");
-          opt.value = g.id;
-          opt.textContent = g.label;
-          raidSelect.appendChild(opt);
-        });
-
-        // Chargement des données
+        // Charger les données
         await loadData();
-        loadRaid(RAID_GROUPS[0].id);
+        populateRaidSelect();
 
-        // Changement de raid
+        // Listeners (UNE SEULE FOIS)
+        const raidSelect = document.getElementById("raidSelect");
+        // Charger le raid depuis l’URL ou fallback
+        loadRaid(filterState.raid || RAID_GROUPS[0].id);
+
+        // Appliquer les filtres à l’UI
+        applyFiltersToUI();
+
+        // 🔒 Sécurisation : si l’URL contenait "karazhan", on a déjà normalisé
+        const raidId = filterState.raid || RAID_GROUPS[0].id;
+
+        // ✅ Sélection explicite
+        raidSelect.value = raidId;
+
+        // 🔥 Si malgré tout aucune option ne matche → fallback
+        if (![...raidSelect.options].some((o) => o.value === raidId)) {
+          raidSelect.value = RAID_GROUPS[0].id;
+          filterState.raid = RAID_GROUPS[0].id;
+          updateURLFromFilters();
+        }
+
         raidSelect.addEventListener("change", () => {
-          loadRaid(raidSelect.value);
+          const raidId = raidSelect.value;
+          loadRaid(raidId);
         });
-
-        // 🔥 Filtres DOM-dépendants (Boss / BIS)
-        slotSelect.addEventListener("change", () => {
-          requestAnimationFrame(renderTable);
-        });
-
-        classSelect.addEventListener("change", () => {
-          requestAnimationFrame(renderTable);
-        });
-
-        roleSelect.addEventListener("change", () => {
-          requestAnimationFrame(renderTable);
-        });
-
-        bossSelect.addEventListener("change", () => {
-          requestAnimationFrame(() => {
-            renderTable();
-          });
-        });
-
-        bisFilter.addEventListener("change", () => {
-          requestAnimationFrame(() => {
-            renderTable();
-          });
-        });
+        document.getElementById("bossSelect")?.addEventListener("change", onFilterChange);
+        document.getElementById("slotSelect")?.addEventListener("change", onFilterChange);
+        document.getElementById("bisFilter")?.addEventListener("change", onFilterChange);
+        document.getElementById("classSelect")?.addEventListener("change", onFilterChange);
+        document.getElementById("roleSelect")?.addEventListener("change", onFilterChange);
       });
     </script>
   </body>

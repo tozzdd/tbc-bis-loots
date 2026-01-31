@@ -3,37 +3,64 @@
 ============================================================ */
 
 function getActiveFilters() {
-  const bossEl = document.getElementById("bossSelect");
-  const bisEl = document.getElementById("bisFilter");
-  const slotEl = document.getElementById("slotSelect");
-  const classEl = document.getElementById("classSelect");
-  const roleEl = document.getElementById("roleSelect");
+  return filterState;
+}
+let filterState = {
+  raid: null,
+  boss: null,
+  slot: null,
+  bis: null,
+  selectedClass: null,
+  selectedRole: null
+};
 
-  return {
-    boss: bossEl && bossEl.value ? bossEl.value.trim() : "",
-    bis: bisEl && bisEl.value ? bisEl.value.trim() : "",
-    slot: slotEl && slotEl.value ? slotEl.value.trim() : "",
-    selectedClass: classEl && classEl.value ? classEl.value.trim() : "",
-    selectedRole: roleEl && roleEl.value ? roleEl.value.trim() : ""
-  };
+function loadFiltersFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  const raidParam = params.get("raid");
+
+  const validRaid = RAID_GROUPS.find((g) => g.id.toLowerCase() === raidParam?.toLowerCase());
+
+  filterState.raid = validRaid ? validRaid.id : null;
+  filterState.boss = params.get("boss");
+  filterState.slot = params.get("slot");
+  filterState.bis = params.get("bis");
+  filterState.selectedClass = params.get("class");
+  filterState.selectedRole = params.get("role");
 }
 
 /* ============================================================
-   Reset des filtres (appelé au changement de raid)
+   On applique les filtres
 ============================================================ */
 
-function resetFilters() {
+function applyFiltersToUI() {
   const bossSelect = document.getElementById("bossSelect");
-  const bisFilter = document.getElementById("bisFilter");
   const slotSelect = document.getElementById("slotSelect");
-  const classSelect = document.getElementById("classSelect");
-  const roleSelect = document.getElementById("roleSelect");
+  const bisSelect = document.getElementById("bisFilter");
 
-  if (bossSelect) bossSelect.value = "";
-  if (bisFilter) bisFilter.value = "";
-  if (slotSelect) slotSelect.value = "";
-  if (classSelect) classSelect.value = "";
-  if (roleSelect) roleSelect.value = "";
+  if (bossSelect) {
+    if (filterState.boss && [...bossSelect.options].some((o) => o.value === filterState.boss)) {
+      bossSelect.value = filterState.boss;
+    } else {
+      filterState.boss = null;
+      bossSelect.value = "";
+    }
+  }
+
+  if (slotSelect) {
+    if (filterState.slot && [...slotSelect.options].some((o) => o.value === filterState.slot)) {
+      slotSelect.value = filterState.slot;
+    } else {
+      filterState.slot = null;
+      slotSelect.value = "";
+    }
+  }
+
+  if (bisSelect) {
+    bisSelect.value = filterState.bis || "";
+  }
+
+  setSelectedClass(filterState.selectedClass);
+  setSelectedRole(filterState.selectedRole);
 }
 
 /* ============================================================
@@ -79,8 +106,58 @@ function populateSlotSelect() {
 }
 
 /* ============================================================
+ Ajout des filtres dans l'URL
+============================================================ */
+
+function updateURLFromFilters() {
+  const params = new URLSearchParams();
+
+  if (filterState.raid) params.set("raid", filterState.raid);
+  if (filterState.boss) params.set("boss", filterState.boss);
+  if (filterState.slot) params.set("slot", filterState.slot);
+  if (filterState.bis) params.set("bis", filterState.bis);
+  if (filterState.selectedClass) params.set("class", filterState.selectedClass);
+  if (filterState.selectedRole) params.set("role", filterState.selectedRole);
+
+  history.replaceState(null, "", `?${params.toString()}`);
+}
+
+function onFilterChange() {
+  filterState.boss = document.getElementById("bossSelect")?.value || null;
+  filterState.slot = document.getElementById("slotSelect")?.value || null;
+  filterState.bis = document.getElementById("bisFilter")?.value || null;
+
+  filterState.selectedClass = document.getElementById("classSelect")?.value || null;
+  filterState.selectedRole = document.getElementById("roleSelect")?.value || null;
+
+  updateURLFromFilters();
+  renderTable();
+}
+
+/* ============================================================
    Mapping Spé → Classe
 ============================================================ */
+function setSelectedClass(value) {
+  const select = document.getElementById("classSelect");
+  if (!select) return;
+
+  if (value && [...select.options].some((o) => o.value === value)) {
+    select.value = value;
+  } else {
+    select.value = "";
+  }
+}
+
+function setSelectedRole(value) {
+  const select = document.getElementById("roleSelect");
+  if (!select) return;
+
+  if (value && [...select.options].some((o) => o.value === value)) {
+    select.value = value;
+  } else {
+    select.value = "";
+  }
+}
 
 const SPEC_TO_CLASS = {
   HPal: "Paladin",
@@ -145,7 +222,7 @@ const SPEC_TO_ROLE = {
 function itemMatchesClass(item, selectedClass) {
   if (!selectedClass) return true;
 
-  const specs = [...(item.spécialisations || []), ...(item.priorité || [])];
+  const specs = [...(item.specialisations_ms || []), ...(item.specialisations_os || []), ...(item.priorité || [])];
 
   return specs.some((spec) => SPEC_TO_CLASS[spec] === selectedClass);
 }
@@ -153,7 +230,7 @@ function itemMatchesClass(item, selectedClass) {
 function itemMatchesRole(item, selectedRole) {
   if (!selectedRole) return true;
 
-  const specs = [...(item.spécialisations || []), ...(item.priorité || [])];
+  const specs = [...(item.specialisations_ms || []), ...(item.specialisations_os || []), ...(item.priorité || [])];
 
   return specs.some((spec) => SPEC_TO_ROLE[spec] === selectedRole);
 }

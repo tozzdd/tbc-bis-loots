@@ -2,6 +2,11 @@ const DATA_SOURCE = "JSON/json_master.json";
 
 const RAID_GROUPS = [
   {
+    id: "ALL",
+    label: "Tous les raids",
+    filter: () => true
+  },
+  {
     id: "karazhan",
     label: "[P1] Karazhan",
     filter: (item) => item.raid === "Karazhan"
