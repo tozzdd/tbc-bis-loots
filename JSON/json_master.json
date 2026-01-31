@@ -4747,7 +4747,7 @@
     "raid": "Karazhan",
     "boss": "Attumen \nle\nVeneur\n(optionnel)",
     "nom": "Brassards du cerf blanc",
-    "emplacement": null,
+    "emplacement": "Poignets",
     "matière": "Cuir",
     "typeArme": null,
     "bis": "BP1",
@@ -4771,7 +4771,7 @@
     "raid": "Karazhan",
     "boss": "Attumen \nle\nVeneur\n(optionnel)",
     "nom": "Gantelets de l'espoir renouvelé",
-    "emplacement": null,
+    "emplacement": "Mains",
     "matière": "Plaque",
     "typeArme": null,
     "bis": "BP1",
@@ -4793,7 +4793,7 @@
     "raid": "Karazhan",
     "boss": "Attumen \nle\nVeneur\n(optionnel)",
     "nom": "Gants de la manipulation habile",
-    "emplacement": null,
+    "emplacement": "Mains",
     "matière": "Cuir",
     "typeArme": null,
     "bis": "BP3",
@@ -4819,7 +4819,7 @@
     "raid": "Karazhan",
     "boss": "Attumen \nle\nVeneur\n(optionnel)",
     "nom": "Gants des saintes bénédictions",
-    "emplacement": null,
+    "emplacement": "Mains",
     "matière": "Tissu",
     "typeArme": null,
     "bis": "BP1",
@@ -4842,7 +4842,7 @@
     "raid": "Karazhan",
     "boss": "Attumen \nle\nVeneur\n(optionnel)",
     "nom": "Protège-mains de la pensée fluide",
-    "emplacement": null,
+    "emplacement": "Mains",
     "matière": "Tissu",
     "typeArme": null,
     "bis": "",
@@ -4866,7 +4866,7 @@
     "raid": "Karazhan",
     "boss": "Attumen \nle\nVeneur\n(optionnel)",
     "nom": "Poignets de messager",
-    "emplacement": null,
+    "emplacement": "Poignets",
     "matière": "Tissu",
     "typeArme": null,
     "bis": "BP1",
@@ -4914,7 +4914,7 @@
     "raid": "Karazhan",
     "boss": "Attumen \nle\nVeneur\n(optionnel)",
     "nom": "Poignets de guerre du traqueur",
-    "emplacement": null,
+    "emplacement": "Poignets",
     "matière": "Maille",
     "typeArme": null,
     "bis": "",
@@ -4962,7 +4962,7 @@
     "boss": "Attumen \nle\nVeneur\n(optionnel)",
     "nom": "Protège-bras de courage",
     "emplacement": "Poignets",
-    "matière": null,
+    "matière": "Plaques",
     "typeArme": null,
     "bis": "BP1",
     "priorité": [
@@ -5011,7 +5011,7 @@
     "boss": "Attumen \nle\nVeneur\n(optionnel)",
     "nom": "Brassards de tourbillon",
     "emplacement": "Poignets",
-    "matière": null,
+    "matière": "Mailles",
     "typeArme": null,
     "bis": "",
     "priorité": [
@@ -5639,7 +5639,7 @@
   {
     "id": 28589,
     "raid": "Karazhan",
-    "boss": "Opera:\nWizard\nof Oz\n\nBoss:\nThe Crone",
+    "boss": "Opera:\n Le Magicien d'Oz",
     "nom": "Espauliers gueule-de-bête",
     "emplacement": "Épaules",
     "matière": "Mailles",
@@ -5662,7 +5662,7 @@
   {
     "id": 28583,
     "raid": "Karazhan",
-    "boss": "Opera:\nLittle Red\nRiding Hood\n\nBoss:\nThe Big\nBad Wolf",
+    "boss": "Opera:\n Le Grand Méchant Loup",
     "nom": "Tête du grand méchant loup",
     "emplacement": "Tête",
     "matière": "Mailles",
@@ -5684,7 +5684,7 @@
   {
     "id": 28584,
     "raid": "Karazhan",
-    "boss": "Opera:\nLittle Red\nRiding Hood\n\nBoss:\nThe Big\nBad Wolf",
+    "boss": "Opera:\n Le Grand Méchant Loup",
     "nom": "Patte du grand méchant loup",
     "emplacement": "Arme 1M",
     "matière": "Pugilat",
@@ -5707,7 +5707,7 @@
   {
     "id": 28591,
     "raid": "Karazhan",
-    "boss": "Opera:\nWizard\nof Oz\n\nBoss:\nThe Crone",
+    "boss": "Opera:\n Le Magicien d'Oz",
     "nom": "Jambières d'âmeterre",
     "emplacement": "Jambes",
     "matière": "Cuir",
@@ -5729,7 +5729,7 @@
   {
     "id": 28593,
     "raid": "Karazhan",
-    "boss": "Opera:\nWizard\nof Oz\n\nBoss:\nThe Crone",
+    "boss": "Opera:\n Le Magicien d'Oz",
     "nom": "Grand heaume en éternium",
     "emplacement": "Tête",
     "matière": "Plaques",
@@ -5750,7 +5750,7 @@
   {
     "id": 28592,
     "raid": "Karazhan",
-    "boss": "Opera:\nWizard\nof Oz\n\nBoss:\nThe Crone",
+    "boss": "Opera:\n Le Magicien d'Oz",
     "nom": "Libram des âmes rachetées",
     "emplacement": "Relique",
     "matière": "Paladin",
@@ -5770,7 +5770,7 @@
   {
     "id": 28582,
     "raid": "Karazhan",
-    "boss": "Opera:\nLittle Red\nRiding Hood\n\nBoss:\nThe Big\nBad Wolf",
+    "boss": "Opera:\n Le Grand Méchant Loup",
     "nom": "Cape du Petit Chaperon Rouge",
     "emplacement": "Dos",
     "matière": null,
@@ -5793,7 +5793,7 @@
   {
     "id": 28590,
     "raid": "Karazhan",
-    "boss": "Opera:\nWizard\nof Oz\n\nBoss:\nThe Crone",
+    "boss": "Opera:\n Le Magicien d'Oz",
     "nom": "Ruban de sacrifice",
     "emplacement": "Bijou",
     "matière": null,
@@ -5816,7 +5816,7 @@
   {
     "id": 28594,
     "raid": "Karazhan",
-    "boss": "Opera:\nWizard\nof Oz\n\nBoss:\nThe Crone",
+    "boss": "Opera:\n Le Magicien d'Oz",
     "nom": "Chausses à l'épreuve du feu",
     "emplacement": "Jambes",
     "matière": "Tissu",
@@ -5840,7 +5840,7 @@
   {
     "id": 28581,
     "raid": "Karazhan",
-    "boss": "Opera:\nLittle Red\nRiding Hood\n\nBoss:\nThe Big\nBad Wolf",
+    "boss": "Opera:\n Le Grand Méchant Loup",
     "nom": "Carabine de précision de pourfendeur de loup",
     "emplacement": "Fusil",
     "matière": null,
@@ -5964,7 +5964,7 @@
   {
     "id": 28588,
     "raid": "Karazhan",
-    "boss": "Opera:\nWizard\nof Oz\n\nBoss:\nThe Crone",
+    "boss": "Opera:\n Le Magicien d'Oz",
     "nom": "Baguette de sorcier en diamant bleu",
     "emplacement": "Baguette",
     "matière": null,
@@ -5989,7 +5989,7 @@
   {
     "id": 28587,
     "raid": "Karazhan",
-    "boss": "Opera:\nWizard\nof Oz\n\nBoss:\nThe Crone",
+    "boss": "Opera:\n Le Magicien d'Oz",
     "nom": "HériBISe",
     "emplacement": "Arme 2M",
     "matière": "Hache",
@@ -6012,7 +6012,7 @@
   {
     "id": 28585,
     "raid": "Karazhan",
-    "boss": "Opera:\nWizard\nof Oz\n\nBoss:\nThe Crone",
+    "boss": "Opera:\n Le Magicien d'Oz",
     "nom": "Souliers de rubis",
     "emplacement": "Pieds",
     "matière": "Tissu",
@@ -6036,7 +6036,7 @@
   {
     "id": 28586,
     "raid": "Karazhan",
-    "boss": "Opera:\nWizard\nof Oz\n\nBoss:\nThe Crone",
+    "boss": "Opera:\n Le Magicien d'Oz",
     "nom": "Chapeau de la méchante sorcière",
     "emplacement": "Tête",
     "matière": "Tissu",
@@ -9667,7 +9667,7 @@
   {
     "id": 28799,
     "raid": "Repaire de Gruul",
-    "boss": "Haut Roi Maulgar and the Ogre Council (Kiggler, Blindeye, Olm, Krosh)",
+    "boss": "Haut Roi Maulgar and the Ogre Council",
     "nom": "Ceinture d'inspiration divine",
     "emplacement": "Taille",
     "matière": "Tissu",
@@ -9697,7 +9697,7 @@
   {
     "id": 28795,
     "raid": "Repaire de Gruul",
-    "boss": "Haut Roi Maulgar and the Ogre Council (Kiggler, Blindeye, Olm, Krosh)",
+    "boss": "Haut Roi Maulgar and the Ogre Council",
     "nom": "Poignets de guerre flèchelame",
     "emplacement": "Poignets",
     "matière": "Plaques",
@@ -9720,7 +9720,7 @@
   {
     "id": 28797,
     "raid": "Repaire de Gruul",
-    "boss": "Haut Roi Maulgar and the Ogre Council (Kiggler, Blindeye, Olm, Krosh)",
+    "boss": "Haut Roi Maulgar and the Ogre Council",
     "nom": "Cape brutale de l'ogre-magi",
     "emplacement": "Dos",
     "matière": null,
@@ -9743,7 +9743,7 @@
   {
     "id": 28800,
     "raid": "Repaire de Gruul",
-    "boss": "Haut Roi Maulgar and the Ogre Council (Kiggler, Blindeye, Olm, Krosh)",
+    "boss": "Haut Roi Maulgar and the Ogre Council",
     "nom": "Marteau des Naaru",
     "emplacement": "Arme 2M",
     "matière": "Masse",
@@ -9764,7 +9764,7 @@
   {
     "id": 28796,
     "raid": "Repaire de Gruul",
-    "boss": "Haut Roi Maulgar and the Ogre Council (Kiggler, Blindeye, Olm, Krosh)",
+    "boss": "Haut Roi Maulgar and the Ogre Council",
     "nom": "Masque maléfique des ombres",
     "emplacement": "Tête",
     "matière": "Cuir",
@@ -9790,7 +9790,7 @@
   {
     "id": 28801,
     "raid": "Repaire de Gruul",
-    "boss": "Haut Roi Maulgar and the Ogre Council (Kiggler, Blindeye, Olm, Krosh)",
+    "boss": "Haut Roi Maulgar and the Ogre Council",
     "nom": "Heaume de guerre de Maulgar",
     "emplacement": "Tête",
     "matière": "Mailles",
@@ -9812,7 +9812,7 @@
   {
     "id": 29763,
     "raid": "Repaire de Gruul",
-    "boss": "Haut Roi Maulgar and the Ogre Council (Kiggler, Blindeye, Olm, Krosh)",
+    "boss": "Haut Roi Maulgar and the Ogre Council",
     "nom": "Espauliers du champion déchu",
     "emplacement": "Jeton d'armure",
     "matière": null,
@@ -9841,7 +9841,7 @@
   {
     "id": 29764,
     "raid": "Repaire de Gruul",
-    "boss": "Haut Roi Maulgar and the Ogre Council (Kiggler, Blindeye, Olm, Krosh)",
+    "boss": "Haut Roi Maulgar and the Ogre Council",
     "nom": "Espauliers du défenseur déchu",
     "emplacement": "Jeton d'armure",
     "matière": null,
@@ -9871,7 +9871,7 @@
   {
     "id": 29762,
     "raid": "Repaire de Gruul",
-    "boss": "Haut Roi Maulgar and the Ogre Council (Kiggler, Blindeye, Olm, Krosh)",
+    "boss": "Haut Roi Maulgar and the Ogre Council",
     "nom": "Espauliers du héros déchu",
     "emplacement": "Jeton d'armure",
     "matière": null,
@@ -22933,7 +22933,7 @@
   {
     "id": 33590,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Cape des fielleux",
     "emplacement": "Dos",
     "matière": null,
@@ -22962,7 +22962,7 @@
   {
     "id": 33480,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Corde de cheveux de Troll tressés",
     "emplacement": "Taille",
     "matière": "Tissu",
@@ -22986,7 +22986,7 @@
   {
     "id": 33971,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Jambières imprégnées d'élunite",
     "emplacement": "Jambes",
     "matière": "Cuir",
@@ -23007,7 +23007,7 @@
   {
     "id": 33483,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Ceinture d'étape de vie",
     "emplacement": "Taille",
     "matière": "Cuir",
@@ -23031,7 +23031,7 @@
   {
     "id": 33489,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Mantelet de mauvaises intentions",
     "emplacement": "Épaules",
     "matière": "Tissu",
@@ -23055,7 +23055,7 @@
   {
     "id": 33481,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Espauliers de résolution de pierre",
     "emplacement": "Épaules",
     "matière": "Plaques",
@@ -23078,7 +23078,7 @@
   {
     "id": 33591,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Drapé de l'Exhalombre",
     "emplacement": "Dos",
     "matière": null,
@@ -23102,7 +23102,7 @@
   {
     "id": 33805,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Bottines de chasseur des ombres",
     "emplacement": "Pieds",
     "matière": "Mailles",
@@ -23125,7 +23125,7 @@
   {
     "id": 33494,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Bâton de divination amani",
     "emplacement": "Arme 2M",
     "matière": "Bâton",
@@ -23150,7 +23150,7 @@
   {
     "id": 33495,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Rage",
     "emplacement": "Arme 1M",
     "matière": "Pugilat",
@@ -23173,7 +23173,7 @@
   {
     "id": 33490,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Bâton de sombre guérison",
     "emplacement": "Arme 2M",
     "matière": "Bâton",
@@ -23196,7 +23196,7 @@
   {
     "id": 33492,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Trollemort",
     "emplacement": "Arme 2M",
     "matière": "Hache",
@@ -23218,7 +23218,7 @@
   {
     "id": 33491,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Brise-défenses",
     "emplacement": "Fusil",
     "matière": null,
@@ -23241,7 +23241,7 @@
   {
     "id": 33493,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Coutelas ombreux",
     "emplacement": "Arme 1M",
     "matière": "Dague",
@@ -23267,7 +23267,7 @@
   {
     "id": 33497,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Bague harmonisée au mana",
     "emplacement": "Doigt",
     "matière": "Anneau",
@@ -23291,7 +23291,7 @@
   {
     "id": 33500,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Chevalière de vie éternelle",
     "emplacement": "Doigt",
     "matière": "Anneau",
@@ -23311,7 +23311,7 @@
   {
     "id": 33499,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Chevalière du dernier défenseur",
     "emplacement": "Doigt",
     "matière": "Anneau",
@@ -23331,7 +23331,7 @@
   {
     "id": 33496,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Chevalière de courroux primordial",
     "emplacement": "Doigt",
     "matière": "Anneau",
@@ -23360,7 +23360,7 @@
   {
     "id": 33498,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Chevalière de la forêt tranquille",
     "emplacement": "Doigt",
     "matière": "Anneau",
@@ -23383,7 +23383,7 @@
   {
     "id": 33809,
     "raid": "Zul'Aman",
-    "boss": "Timed Event 45 Minutes Tanzar's Trunk Harkor's Satchel Kraz's Package Ashli's Bag",
+    "boss": "Zul'Aman Timed Event Chest",
     "nom": "Ours de guerre amani",
     "emplacement": "Monture",
     "matière": null,
